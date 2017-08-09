@@ -1,6 +1,4 @@
-/*jslint browser:true*/
-/*global $, console: false*/
-
+import $ from 'jQuery';
 
 function initGAuth(){
     console.log('assert');
@@ -14,4 +12,3 @@ function initLAuth(){
 function initNormalReg(){
 
 }
-

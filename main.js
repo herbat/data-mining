@@ -1,16 +1,8 @@
 /*jslint browser:true*/
+/*jslint esnext:true*/
+/*jslint node:true*/
 /*global $, console: false*/
 
-function initGAuth(){
-    console.log('assert');
-    $('#googleAuthBtn').css('background-color', 'blue');
-}
+require("babel-core").transform("login.js", options);
 
-function initLAuth(){
-
-}
-
-function initNormalReg(){
-
-}
 
