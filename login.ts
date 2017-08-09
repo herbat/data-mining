@@ -1,14 +1,20 @@
 import $ = require("jquery");
 
-exports.initGAuth = function (){
-    console.log('assert');
-    $('#googleAuthBtn').css('background-color', 'blue');
+class Login {
+
+    initGAuth() {
+        console.log('assert');
+        $('#googleAuthBtn').css('background-color', 'blue');
+    }
+
+    initLAuth() {
+        $('#linkedInAuthBtn').css('background-color', 'red');
+    }
+
+    initNormalReg (){
+        $('#normalRegBtn').css('background-color', 'green');
+    }
+
 }
 
-exports.initLAuth = function (){
-
-}
-
-exports.initNormalReg = function (){
-
-}
+export = Login;
