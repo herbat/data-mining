@@ -1,14 +1,14 @@
-import $ from 'jquery';
+import $ = require("jquery");
 
-function initGAuth(){
+exports.initGAuth = function (){
     console.log('assert');
     $('#googleAuthBtn').css('background-color', 'blue');
 }
 
-function initLAuth(){
+exports.initLAuth = function (){
 
 }
 
-function initNormalReg(){
+exports.initNormalReg = function (){
 
 }
