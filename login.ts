@@ -2,17 +2,15 @@ import $ = require("jquery");
 
 class Login {
 
-    initGAuth() {
-        console.log('assert');
-        $('#googleAuthBtn').css('background-color', 'blue');
+    gAuth(gUsr) {
+        var profile = gUsr.getBasicProfile();
+        console.log(profile.getName());
     }
 
     initLAuth() {
-        $('#linkedInAuthBtn').css('background-color', 'red');
     }
 
     initNormalReg (){
-        $('#normalRegBtn').css('background-color', 'green');
     }
 
 }

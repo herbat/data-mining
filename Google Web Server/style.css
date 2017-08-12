@@ -35,6 +35,7 @@ div.button {
     max-height: 50px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: none;
     border: 1px solid #AAAAAA;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -50,6 +51,14 @@ div.button p {
     text-align: center;
     font-family: 'Proxima Nova Thin', Helvetica;
 
+}
+
+span.icon {
+    background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
 }
 
 #or {

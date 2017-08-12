@@ -4,16 +4,45 @@
     <meta   charset = "utf-8">
     <meta   http = "X-UA-Compatible" content = "IE=edge">
     <meta   name = "viewport" content = "width=device-width, initial-scale=1">
+    <meta   name="google-signin-client_id" content="20803037767-946f0p2hhem4h14rnparv5ano311p7f2.apps.googleusercontent.com">
     <script src = "main.js"></script>
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script>
+      var googleUser = {};
+      var startApp = function() {
+        gapi.load('auth2', function(){
+          // Retrieve the singleton for the GoogleAuth library and set up the client.
+          auth2 = gapi.auth2.init({
+            client_id: '20803037767-946f0p2hhem4h14rnparv5ano311p7f2.apps.googleusercontent.com',
+            cookiepolicy: 'single_host_origin',
+          });
+          attachSignin(document.getElementById('googleAuthBtn'));
+        });
+      };
+
+      function attachSignin(element) {
+        console.log(element.id);
+        auth2.attachClickHandler(element, {},
+                                 function(googleUser) {
+          document.getElementById('name').innerText = "Signed in: " +
+            googleUser.getBasicProfile().getName();
+        }, function(error) {
+          alert(JSON.stringify(error, undefined, 2));
+        });
+      }
+    </script>
     <link   rel = "stylesheet" href = "style.css">
     <link   rel = "stylesheet" href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.css">
   </head>
   <body>
     <main>
       <h1>Five words</h1>
-      <div id="googleAuthBtn" class="button">
+      <p id="name"></p>
+      <div id="googleAuthBtn" class="button" data-onsuccess="onSignIn" data-theme="light" data-longtitle="true" data-width="device-width/2" data-height="device-height/10">
+        <span class="icon"></span>
         <p>Sign in with Google</p>
       </div>
+      <script>startApp();</script>
       <div id="linkedInAuthBtn" class="button">
         <p>Sign in with LinkedIn</p>
       </div>

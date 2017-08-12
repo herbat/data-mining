@@ -5,8 +5,7 @@
   "main": "main.ts",
   "scripts": {
     "babel": "babel --presets es2015 main.js -o build/main.bundle.js",
-    "start": "http-server",
-    "build": "cp index.html 'Google Web Server/index.html' && tsc main.ts && browserify main.js -o 'Google Web Server/main.js' && cp style.css 'Google Web Server/style.css'"
+    "start": "http-server"
   },
   "author": "",
   "license": "ISC",

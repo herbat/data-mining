@@ -3,5 +3,11 @@ exports.__esModule = true;
 var lg = require("./login");
 var $ = require("jquery");
 var login = new lg();
-$('#googleAuthBtn').click(login.initGAuth);
-$('document').ready(function () { console.log('loaded'); });
+$('document').ready(function () {
+    console.log('loaded');
+    $('#linkedInAuthBtn').click(login.initLAuth);
+    $('#normalRegBtn').click(login.initNormalReg);
+});
+function onSignIn(gUsr) {
+    login.gAuth(gUsr);
+}

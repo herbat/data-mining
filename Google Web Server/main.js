@@ -1,23 +1,34 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
-var $ = require("jquery");
 var Login = (function () {
     function Login() {
     }
-    Login.prototype.initGAuth = function () {
-        console.log('assert');
-        $('#googleAuthBtn').css('background-color', 'blue');
+    Login.prototype.gAuth = function (gUsr) {
+        var profile = gUsr.getBasicProfile();
+        console.log(profile.getName());
     };
     Login.prototype.initLAuth = function () {
-        $('#linkedInAuthBtn').css('background-color', 'red');
     };
     Login.prototype.initNormalReg = function () {
-        $('#normalRegBtn').css('background-color', 'green');
     };
     return Login;
 }());
 module.exports = Login;
 
+},{}],2:[function(require,module,exports){
+"use strict";
+exports.__esModule = true;
+var lg = require("./login");
+var $ = require("jquery");
+var login = new lg();
+$('document').ready(function () {
+    console.log('loaded');
+    $('#linkedInAuthBtn').click(login.initLAuth);
+    $('#normalRegBtn').click(login.initNormalReg);
+});
+function onSignIn(gUsr) {
+    login.gAuth(gUsr);
+}
 
 },{"./login":1,"jquery":3}],3:[function(require,module,exports){
 /*!
