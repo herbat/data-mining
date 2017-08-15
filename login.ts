@@ -8,9 +8,11 @@ class Login {
     }
 
     initLAuth() {
+        alert('LinkedIn Auth Started');
     }
 
     initNormalReg (){
+
     }
 
 }

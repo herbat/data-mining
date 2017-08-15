@@ -11,7 +11,6 @@
       var googleUser = {};
       var startApp = function() {
         gapi.load('auth2', function(){
-          // Retrieve the singleton for the GoogleAuth library and set up the client.
           auth2 = gapi.auth2.init({
             client_id: '20803037767-946f0p2hhem4h14rnparv5ano311p7f2.apps.googleusercontent.com',
             cookiepolicy: 'single_host_origin',
@@ -38,17 +37,17 @@
     <main>
       <h1>Five words</h1>
       <p id="name"></p>
-      <div id="googleAuthBtn" class="button" data-onsuccess="onSignIn" data-theme="light" data-longtitle="true" data-width="device-width/2" data-height="device-height/10">
-        <span class="icon"></span>
-        <p>Sign in with Google</p>
+      <div id="googleAuthBtn" class="button">
+        <span id="g-icon"></span>
+        <span id="gtext" class="logintext">Sign in with Google</span>
       </div>
       <script>startApp();</script>
       <div id="linkedInAuthBtn" class="button">
-        <p>Sign in with LinkedIn</p>
+        <span class="logintext">Sign in with LinkedIn</span>
       </div>
       <div id="or"><p>or</p></div>
       <div id="normalRegBtn" class="button">
-        <p>Normal Registration</p>
+        <span class="logintext">Normal Registration</span>
       </div>
     </main>
     <footer>
