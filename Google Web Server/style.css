@@ -17,9 +17,18 @@
     to {background-color: #DDDDDD;}
 }
 
+input {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 html, body {
-    margin: 0; 
-    height: 100%; 
+    margin: 0;
+    height: 100%;
     overflow: hidden
 }
 
@@ -97,3 +106,18 @@ footer p {
     font-family: 'Proxima Nova Thin', Helvetica;
     color: lightgrey;
 }
+
+#reg {
+    font-family: 'Proxima Nova', Helvetica, sans-serif;
+    font-size: .9em;
+}
+#reg span {
+    border-bottom: 1px solid grey;
+    width: 50%;
+    height: 10%;
+    max-width: 250px;
+    max-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
