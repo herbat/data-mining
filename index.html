@@ -1,6 +1,7 @@
-<!doctype>
+<!doctype html>
 <html>
   <head>
+    <title>Five Words</title>
     <meta   charset = "utf-8">
     <meta   http = "X-UA-Compatible" content = "IE=edge">
     <meta   name = "viewport" content = "width=device-width, initial-scale=1">
@@ -15,7 +16,7 @@
             client_id: '20803037767-946f0p2hhem4h14rnparv5ano311p7f2.apps.googleusercontent.com',
             cookiepolicy: 'single_host_origin',
           });
-          attachSignin(document.getElementById('googleAuthBtn'));
+          attachSignin(document.getElementById('google-a-btn'));
         });
       };
 
@@ -35,20 +36,7 @@
   </head>
   <body>
     <main>
-      <h1>Five words</h1>
-      <p id="name"></p>
-      <div id="googleAuthBtn" class="button">
-        <span id="g-icon"></span>
-        <span id="gtext" class="logintext">Sign in with Google</span>
-      </div>
-      <script>startApp();</script>
-      <div id="linkedInAuthBtn" class="button">
-        <span class="logintext">Sign in with LinkedIn</span>
-      </div>
-      <div id="or"><p>or</p></div>
-      <div id="normalRegBtn" class="button">
-        <span class="logintext">Normal Registration</span>
-      </div>
+      <app-root></app-root>
     </main>
     <footer>
         <p>Copyright (c)</p>

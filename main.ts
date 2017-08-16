@@ -6,8 +6,8 @@ let login = new lg();
 $('document').ready(() => {
     console.log('loaded');
 
-    $('#linkedInAuthBtn').click(login.initLAuth);
-    $('#normalRegBtn').click(login.initNormalReg);
+    $('#in-a-btn').click(login.initLAuth);
+    $('#nreg-btn').click(login.initNormalReg);
 });
 
 function onSignIn(gUsr){
