@@ -1,18 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
+export class User {
+    id: number;
+    age: number;
+    name: string;
+    profession: string;
+}
 
 @Component({
-    templateUrl: './normalreg.html'
+    selector: 'reg',
+    templateUrl: './reg.html'
 })
 
 export class Register {
-    var users = [];
-    function submit() {
-        var user = {
-            name : '',
-            age : 0,
-            profession : ''
-        };
-        users.push(user);
-        console.log('submitted');
+    users: User[];
+    user: User;
+    @Output onWordsStart = new EventEmitter();
+
+    submit(): void {
+        $('#submit-button').addClass('animate');
+        $('#submit-button').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+            function (e) { $('#submit-button').removeClass('animate');
+        });
+        //this.users.push(this.user);
+        this.onWordsStart.emit();
+        console.log('submitted', this.user.age);
     };
+
 }

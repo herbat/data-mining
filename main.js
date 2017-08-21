@@ -1,13 +1,7 @@
-"use strict";
-exports.__esModule = true;
-var lg = require("./login");
-var $ = require("jquery");
-var login = new lg();
+import { platformBrowser } from '@angular/platform-browser';
+import { AppModuleNgFactory } from './aot/src/app/app.module.ngfactory';
+platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 $('document').ready(function () {
     console.log('loaded');
-    $('#linkedInAuthBtn').click(login.initLAuth);
-    $('#normalRegBtn').click(login.initNormalReg);
 });
-function onSignIn(gUsr) {
-    login.gAuth(gUsr);
-}
+//# sourceMappingURL=main.js.map

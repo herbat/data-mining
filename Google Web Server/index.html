@@ -5,9 +5,11 @@
     <meta   charset = "utf-8">
     <meta   http = "X-UA-Compatible" content = "IE=edge">
     <meta   name = "viewport" content = "width=device-width, initial-scale=1">
-    <meta   name="google-signin-client_id" content="20803037767-946f0p2hhem4h14rnparv5ano311p7f2.apps.googleusercontent.com">
-    <script src = "main.js"></script>
-    <script src="https://apis.google.com/js/api:client.js"></script>
+    <meta   name = "google-signin-client_id" content = "20803037767-946f0p2hhem4h14rnparv5ano311p7f2.apps.googleusercontent.com">
+    <script src  = "https://apis.google.com/js/api:client.js"></script>
+    <script src  = "jquery-3.2.1.min.js"></script>
+    <script src  = "shim.min.js"></script>
+    <script src  = "zone.js"></script>
     <script>
       var googleUser = {};
       var startApp = function() {
@@ -30,6 +32,10 @@
           alert(JSON.stringify(error, undefined, 2));
         });
       }
+      function onSignIn(gUsr){
+        var profile = gUsr.getBasicProfile();
+        console.log(profile.getName());
+      }
     </script>
     <link   rel = "stylesheet" href = "style.css">
     <link   rel = "stylesheet" href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.css">
@@ -37,6 +43,8 @@
   <body>
     <main>
       <app-root></app-root>
+      <script src = "build.js"></script>
+      <script>startApp();</script>
     </main>
     <footer>
         <p>Copyright (c)</p>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 @Component ({
     selector:'init',
@@ -6,10 +6,9 @@ import { Component } from '@angular/core'
 })
 
 export class Init {
-    var initOpen = true;
-    var regOpen = false;
-    function initReg(){
-        initOpen = false;
-        regOpen = true;
+    @Output private onRegStart = new EventEmitter();
+
+    startReg(){
+        this.onRegStart.emit();
     }
 }

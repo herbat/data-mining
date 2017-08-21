@@ -1,15 +1,8 @@
-import lg = require('./login');
-import $ = require('jquery');
+import { platformBrowser } from '@angular/platform-browser';
+import { AppModuleNgFactory }     from './aot/src/app/app.module.ngfactory';
 
-let login = new lg();
+platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 
 $('document').ready(() => {
     console.log('loaded');
-
-    $('#in-a-btn').click(login.initLAuth);
-    $('#nreg-btn').click(login.initNormalReg);
 });
-
-function onSignIn(gUsr){
-    login.gAuth(gUsr);
-}

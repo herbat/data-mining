@@ -15,6 +15,23 @@
     "@types/node": "^8.0.20",
     "angular": "^1.6.5",
     "http-server": "^0.10.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "rollup": "^0.47.6",
+    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "dependencies": {
+    "@angular/animations": "^4.3.5",
+    "@angular/common": "^4.3.5",
+    "@angular/compiler": "^4.3.5",
+    "@angular/compiler-cli": "^4.3.5",
+    "@angular/core": "^4.3.5",
+    "@angular/forms": "^4.3.5",
+    "@angular/platform-browser": "^4.3.5",
+    "@angular/platform-browser-dynamic": "^4.3.5",
+    "@angular/platform-server": "^4.3.5",
+    "core-js": "^2.5.0",
+    "zone.js": "^0.8.16"
   }
 }
