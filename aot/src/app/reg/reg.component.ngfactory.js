@@ -10,27 +10,24 @@ var styles_Register = [];
 export var RenderType_Register = i0.ɵcrt({ encapsulation: 2, styles: styles_Register,
     data: {} });
 export function View_Register_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 13, 'div', [['id',
+    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 10, 'div', [['id',
                 'reg']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, null, null, 0, 'input', [['ng-model', 'user.name'], ['placeholder', 'Name'], ['type', 'text']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)),
-        (_l()(), i0.ɵeld(0, null, null, 0, 'input', [['ng-model', 'user.age'],
-            ['placeholder', 'Age'], ['type', 'number']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(),
-            i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, null, null, 0, 'input', [['ng-model', 'user.profession'], ['placeholder',
-                'Profession'], ['type', 'text']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(),
-            i0.ɵeld(0, null, null, 1, 'div', [['id', 'submit-button']], null, [[null, 'click']], function (_v, en, $event) {
-                var ad = true;
-                var _co = _v.component;
-                if (('click' === en)) {
-                    var pd_0 = (_co.submit() !== false);
-                    ad = (pd_0 && ad);
-                }
-                return ad;
-            }, null, null)), (_l()(), i0.ɵted(null, ['Next'])),
-        (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, null);
+        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, [['sex', 1]], null, 0, 'input', [['placeholder',
+                'Gender'], ['type', 'text']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, [['age', 1]], null, 0, 'input', [['placeholder', 'Age'], ['type', 'number']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'div', [['id',
+                'submit-button']], null, [[null, 'click']], function (_v, en, $event) {
+            var ad = true;
+            var _co = _v.component;
+            if (('click' === en)) {
+                var pd_0 = (_co.submit(i0.ɵnov(_v, 3).value, i0.ɵnov(_v, 6).value) !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), (_l()(), i0.ɵted(null, ['Next'])), (_l()(),
+            i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, null);
 }
 export function View_Register_Host_0(_l) {
     return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'reg', [], null, null, null, View_Register_0, RenderType_Register)),
         i0.ɵdid(49152, null, 0, i1.Register, [], null, null)], null, null);
 }
-export var RegisterNgFactory = i0.ɵccf('reg', i1.Register, View_Register_Host_0, {}, {}, []);
+export var RegisterNgFactory = i0.ɵccf('reg', i1.Register, View_Register_Host_0, {}, { onWordsStart: 'onWordsStart' }, []);
 //# sourceMappingURL=reg.component.ngfactory.js.map

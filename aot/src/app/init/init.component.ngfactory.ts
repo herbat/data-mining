@@ -12,36 +12,58 @@ const styles_Init:any[] = ([] as any[]);
 export const RenderType_Init:i0.RendererType2 = i0.ɵcrt({encapsulation:2,styles:styles_Init,
     data:{}});
 export function View_Init_0(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),
-      (null as any),0,'p',[['id','name']],(null as any),(null as any),(null as any),
-      (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),
-      i0.ɵeld(0,(null as any),(null as any),6,'div',[['class','button'],['id','google-a-btn']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-          0,'span',[['id','g-icon']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,
-          (null as any),(null as any),1,'span',[['class','logintext'],['id','gtext']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['Sign in with Google'])),(_l()(),i0.ɵted((null as any),
-          ['\n'])),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),
-          ['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',[['class',
-          'button'],['id','in-a-btn']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,
-          (null as any),(null as any),1,'span',[['class','logintext']],(null as any),
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),0,'p',[['id','name']],
+      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+      6,'div',[['class','button'],['id','google-a-btn']],(null as any),[[(null as any),
+          'click']],(_v,en,$event) => {
+        var ad:boolean = true;
+        var _co:i1.Init = _v.component;
+        if (('click' === en)) {
+          const pd_0:any = ((<any>_co.startReg()) !== false);
+          ad = (pd_0 && ad);
+        }
+        return ad;
+      },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),
+      i0.ɵeld(0,(null as any),(null as any),0,'span',[['id','g-icon']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
-          ['Sign in with LinkedIn'])),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),
-          i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-          2,'div',[['id','or']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'p',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['or'])),(_l()(),i0.ɵted((null as any),['\n'])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',[['class','button'],['id',
-          'nreg-btn']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-          1,'span',[['class','logintext']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i0.ɵted((null as any),['Normal Registration'])),
-      (_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),['\n']))],
-      (null as any),(null as any));
+      ['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'span',[['class',
+      'logintext'],['id','gtext']],(null as any),(null as any),(null as any),(null as any),
+      (null as any))),(_l()(),i0.ɵted((null as any),['Sign in with Google'])),(_l()(),
+      i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),
+      i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+      4,'div',[['class','button'],['id','in-a-btn']],(null as any),[[(null as any),
+          'click']],(_v,en,$event) => {
+        var ad:boolean = true;
+        var _co:i1.Init = _v.component;
+        if (('click' === en)) {
+          const pd_0:any = ((<any>_co.startReg()) !== false);
+          ad = (pd_0 && ad);
+        }
+        return ad;
+      },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),
+      i0.ɵeld(0,(null as any),(null as any),1,'span',[['class','logintext']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+      ['Sign in with LinkedIn'])),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),
+      ['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),2,'div',[['id','or']],
+      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      i0.ɵeld(0,(null as any),(null as any),1,'p',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+      ['or'])),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),
+      (null as any),4,'div',[['class','button'],['id','nreg-btn']],(null as any),[[(null as any),
+          'click']],(_v,en,$event) => {
+        var ad:boolean = true;
+        var _co:i1.Init = _v.component;
+        if (('click' === en)) {
+          const pd_0:any = ((<any>_co.startReg()) !== false);
+          ad = (pd_0 && ad);
+        }
+        return ad;
+      },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),
+      i0.ɵeld(0,(null as any),(null as any),1,'span',[['class','logintext']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+      ['Normal Registration'])),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),
+      ['\n']))],(null as any),(null as any));
 }
 export function View_Init_Host_0(_l:any):i0.ɵViewDefinition {
   return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'init',([] as any[]),
@@ -50,5 +72,5 @@ export function View_Init_Host_0(_l:any):i0.ɵViewDefinition {
       (null as any));
 }
 export const InitNgFactory:i0.ComponentFactory<i1.Init> = i0.ɵccf('init',i1.Init,View_Init_Host_0,
-    {},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2luaXQvaW5pdC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvaW5pdC9pbml0LmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2luaXQvaW5pdC5odG1sIiwibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvaW5pdC9pbml0LmNvbXBvbmVudC50cy5Jbml0X0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiXG48cCBpZD1cIm5hbWVcIj48L3A+XG48ZGl2IGlkPVwiZ29vZ2xlLWEtYnRuXCIgY2xhc3M9XCJidXR0b25cIj5cbiAgPHNwYW4gaWQ9XCJnLWljb25cIj48L3NwYW4+XG4gIDxzcGFuIGlkPVwiZ3RleHRcIiBjbGFzcz1cImxvZ2ludGV4dFwiPlNpZ24gaW4gd2l0aCBHb29nbGU8L3NwYW4+XG48L2Rpdj5cbjxzY3JpcHQ+c3RhcnRBcHAoKTs8L3NjcmlwdD5cbjxkaXYgaWQ9XCJpbi1hLWJ0blwiIGNsYXNzPVwiYnV0dG9uXCI+XG4gIDxzcGFuIGNsYXNzPVwibG9naW50ZXh0XCI+U2lnbiBpbiB3aXRoIExpbmtlZEluPC9zcGFuPlxuPC9kaXY+XG48ZGl2IGlkPVwib3JcIj48cD5vcjwvcD48L2Rpdj5cbjxkaXYgaWQ9XCJucmVnLWJ0blwiIGNsYXNzPVwiYnV0dG9uXCI+XG4gIDxzcGFuIGNsYXNzPVwibG9naW50ZXh0XCIgPk5vcm1hbCBSZWdpc3RyYXRpb248L3NwYW4+XG48L2Rpdj5cbiIsIjxpbml0PjwvaW5pdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7OztvQkNBQSx1Q0FDQTtNQUFBO01BQUEsOEJBQWlCLHVDQUNqQjthQUFBO1VBQUE7TUFBc0MseUNBQ3BDO1VBQUE7VUFBQSxnQkFBeUIseUNBQ3pCO1VBQUE7VUFBQTtNQUFtQyx3REFBMEI7VUFBQSxTQUN6RCx1Q0FDc0I7VUFBQSxTQUM1QjtVQUFBO1VBQUEsZ0JBQWtDLHlDQUNoQztVQUFBO1VBQUEsMERBQXdCO1VBQUEsNEJBQTRCLHVDQUNoRDtpQkFBQSx3QkFDTjtVQUFBO1VBQUEsZ0JBQWE7VUFBQTtNQUFHLHVDQUFZO01BQzVCO1VBQUE7TUFBa0MseUNBQ2hDO1VBQUE7VUFBQSw4QkFBeUI7TUFBMEIsdUNBQy9DOzs7O29CQ2JOO01BQUEsK0VBQUE7TUFBQTs7OzsifQ==
+    {},{onRegStart:'onRegStart'},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2luaXQvaW5pdC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvaW5pdC9pbml0LmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2luaXQvaW5pdC5odG1sIiwibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvaW5pdC9pbml0LmNvbXBvbmVudC50cy5Jbml0X0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiPHAgaWQ9XCJuYW1lXCI+PC9wPlxuPGRpdiBpZD1cImdvb2dsZS1hLWJ0blwiIGNsYXNzPVwiYnV0dG9uXCIgKGNsaWNrKT1cInN0YXJ0UmVnKClcIj5cbiAgPHNwYW4gaWQ9XCJnLWljb25cIj48L3NwYW4+XG4gIDxzcGFuIGlkPVwiZ3RleHRcIiBjbGFzcz1cImxvZ2ludGV4dFwiPlNpZ24gaW4gd2l0aCBHb29nbGU8L3NwYW4+XG48L2Rpdj5cbjxzY3JpcHQ+c3RhcnRBcHAoKTs8L3NjcmlwdD5cbjxkaXYgaWQ9XCJpbi1hLWJ0blwiIGNsYXNzPVwiYnV0dG9uXCIgKGNsaWNrKT1cInN0YXJ0UmVnKClcIj5cbiAgPHNwYW4gY2xhc3M9XCJsb2dpbnRleHRcIj5TaWduIGluIHdpdGggTGlua2VkSW48L3NwYW4+XG48L2Rpdj5cbjxkaXYgaWQ9XCJvclwiPjxwPm9yPC9wPjwvZGl2PlxuPGRpdiBpZD1cIm5yZWctYnRuXCIgY2xhc3M9XCJidXR0b25cIiAoY2xpY2spPVwic3RhcnRSZWcoKVwiPlxuICA8c3BhbiBjbGFzcz1cImxvZ2ludGV4dFwiID5Ob3JtYWwgUmVnaXN0cmF0aW9uPC9zcGFuPlxuPC9kaXY+XG4iLCI8aW5pdD48L2luaXQ+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQSx3RUFBaUI7YUFBQSx3QkFDakI7TUFBQTtVQUFBO1FBQUE7UUFBQTtRQUFzQztVQUFBO1VBQUE7UUFBQTtRQUF0QztNQUFBLGdDQUEyRCx5Q0FDekQ7YUFBQTtVQUFBLDBEQUF5QjtNQUFBLFdBQ3pCO01BQUE7TUFBQSxnQkFBbUMsd0RBQTBCO2FBQUEsd0JBQ3pELHVDQUNzQjthQUFBLHdCQUM1QjtNQUFBO1VBQUE7UUFBQTtRQUFBO1FBQWtDO1VBQUE7VUFBQTtRQUFBO1FBQWxDO01BQUEsZ0NBQXVELHlDQUNyRDthQUFBO1VBQUEsMERBQXdCO01BQUEsNEJBQTRCLHVDQUNoRDtNQUFBLFNBQ047TUFBQSx3RUFBYTthQUFBO1VBQUEsNENBQUc7TUFBQSxTQUFZLHVDQUM1QjtNQUFBO1VBQUE7UUFBQTtRQUFBO1FBQWtDO1VBQUE7VUFBQTtRQUFBO1FBQWxDO01BQUEsZ0NBQXVELHlDQUNyRDthQUFBO1VBQUEsMERBQXlCO01BQUEsMEJBQTBCLHVDQUMvQztNQUFBOzs7b0JDWk47TUFBQSwrRUFBQTtNQUFBOzs7OyJ9

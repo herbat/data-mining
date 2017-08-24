@@ -1,6 +1,5 @@
 <div id="reg">
-  <span><input type="text" ng-model="user.name" placeholder="Name"></span>
-  <span><input type="number" ng-model="user.age" placeholder="Age"></span>
-  <span><input type="text" ng-model="user.profession" placeholder="Profession"></span>
-  <div id="submit-button" (click)="submit()">Next</div>
+  <span><input type="text"   #sex placeholder="Gender"></span>
+  <span><input type="number" #age placeholder="Age"></span>
+  <div id="submit-button" (click)="submit(sex.value, age.value)">Next</div>
 </div>

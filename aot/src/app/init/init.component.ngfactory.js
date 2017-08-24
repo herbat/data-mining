@@ -10,20 +10,45 @@ var styles_Init = [];
 export var RenderType_Init = i0.ɵcrt({ encapsulation: 2, styles: styles_Init,
     data: {} });
 export function View_Init_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 0, 'p', [['id', 'name']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n'])), (_l()(),
-            i0.ɵeld(0, null, null, 6, 'div', [['class', 'button'], ['id', 'google-a-btn']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 0, 'span', [['id', 'g-icon']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext'], ['id', 'gtext']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['Sign in with Google'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [['class',
-                'button'], ['id', 'in-a-btn']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['Sign in with LinkedIn'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(),
-            i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 2, 'div', [['id', 'or']], null, null, null, null, null)), (_l()(), i0.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['or'])), (_l()(), i0.ɵted(null, ['\n'])),
-        (_l()(), i0.ɵeld(0, null, null, 4, 'div', [['class', 'button'], ['id',
-                'nreg-btn']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['Normal Registration'])),
-        (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, null);
+    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 0, 'p', [['id', 'name']], null, null, null, null, null)), (_l()(),
+            i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 6, 'div', [['class', 'button'], ['id', 'google-a-btn']], null, [[null,
+                'click']], function (_v, en, $event) {
+            var ad = true;
+            var _co = _v.component;
+            if (('click' === en)) {
+                var pd_0 = (_co.startReg() !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(),
+            i0.ɵeld(0, null, null, 0, 'span', [['id', 'g-icon']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [['class',
+                'logintext'], ['id', 'gtext']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['Sign in with Google'])), (_l()(),
+            i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(),
+            i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [['class', 'button'], ['id', 'in-a-btn']], null, [[null,
+                'click']], function (_v, en, $event) {
+            var ad = true;
+            var _co = _v.component;
+            if (('click' === en)) {
+                var pd_0 = (_co.startReg() !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(),
+            i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['Sign in with LinkedIn'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 2, 'div', [['id', 'or']], null, null, null, null, null)), (_l()(),
+            i0.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['or'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [['class', 'button'], ['id', 'nreg-btn']], null, [[null,
+                'click']], function (_v, en, $event) {
+            var ad = true;
+            var _co = _v.component;
+            if (('click' === en)) {
+                var pd_0 = (_co.startReg() !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(),
+            i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['Normal Registration'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, null);
 }
 export function View_Init_Host_0(_l) {
     return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'init', [], null, null, null, View_Init_0, RenderType_Init)), i0.ɵdid(49152, null, 0, i1.Init, [], null, null)], null, null);
 }
-export var InitNgFactory = i0.ɵccf('init', i1.Init, View_Init_Host_0, {}, {}, []);
+export var InitNgFactory = i0.ɵccf('init', i1.Init, View_Init_Host_0, {}, { onRegStart: 'onRegStart' }, []);
 //# sourceMappingURL=init.component.ngfactory.js.map

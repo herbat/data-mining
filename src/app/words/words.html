@@ -1,3 +1,31 @@
-<div id="words">
-  <p>Words!!!!</p>
+<div>
+  <h2>{{question}}</h2>
+  <form [formGroup] = "wordForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="words" id="words">
+      <div id="word{{i+1}}"  class="word" *ngFor="let word of words.controls; index as i" >
+        <input id = "{{i}}"
+               type = "text"
+               placeholder = "word #{{i+1}}"
+               [formControlName] = "i" >
+        <div class="next-btn" (click)="next(i)"></div>
+        <div *ngIf="i.invalid && (i.dirty || i.touched)"
+             class="invalid">
+
+          <div *ngIf="i.errors.required">
+            Word #{{i}} is required.
+          </div>
+          <div *ngIf="i.errors.minlength || i.errors.maxlength">
+            Word #{{i}} must be at least 3 characters long.
+          </div>
+          <div *ngIf="i.errors.pattern">
+            Word #{{i}} cannot contain spaces.
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <button>Submit</button>
+  </form>
 </div>

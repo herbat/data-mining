@@ -21,10 +21,11 @@ export var AppModuleNgFactory = i0.ɵcmf(i1.AppModule, [i2.AppComponent], functi
         i0.ɵmpd(135680, i5.ɵDomSharedStylesHost, i5.ɵDomSharedStylesHost, [i4.DOCUMENT]),
         i0.ɵmpd(4608, i5.ɵDomRendererFactory2, i5.ɵDomRendererFactory2, [i5.EventManager,
             i5.ɵDomSharedStylesHost]), i0.ɵmpd(6144, i0.RendererFactory2, null, [i5.ɵDomRendererFactory2]), i0.ɵmpd(6144, i5.ɵSharedStylesHost, null, [i5.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i0.Testability, i0.Testability, [i0.NgZone]), i0.ɵmpd(4608, i5.Meta, i5.Meta, [i4.DOCUMENT]), i0.ɵmpd(4608, i5.Title, i5.Title, [i4.DOCUMENT]), i0.ɵmpd(4608, i6.ɵi, i6.ɵi, []),
-        i0.ɵmpd(512, i4.CommonModule, i4.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i5.ɵa, []), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p0_1) {
+        i0.ɵmpd(4608, i6.FormBuilder, i6.FormBuilder, []), i0.ɵmpd(512, i4.CommonModule, i4.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i5.ɵa, []),
+        i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p0_1) {
             return [i5.ɵc(p0_0, p0_1)];
         }, [[2, i5.NgProbeToken], [2, i0.NgProbeToken]]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ɵe, i0.ɵe, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver,
             i0.ApplicationInitStatus]), i0.ɵmpd(2048, i0.ApplicationRef, null, [i0.ɵe]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]),
-        i0.ɵmpd(512, i5.BrowserModule, i5.BrowserModule, [[3, i5.BrowserModule]]), i0.ɵmpd(512, i6.ɵba, i6.ɵba, []), i0.ɵmpd(512, i6.FormsModule, i6.FormsModule, []), i0.ɵmpd(512, i1.AppModule, i1.AppModule, [])]);
+        i0.ɵmpd(512, i5.BrowserModule, i5.BrowserModule, [[3, i5.BrowserModule]]), i0.ɵmpd(512, i6.ɵba, i6.ɵba, []), i0.ɵmpd(512, i6.FormsModule, i6.FormsModule, []), i0.ɵmpd(512, i6.ReactiveFormsModule, i6.ReactiveFormsModule, []), i0.ɵmpd(512, i1.AppModule, i1.AppModule, [])]);
 });
 //# sourceMappingURL=app.module.ngfactory.js.map

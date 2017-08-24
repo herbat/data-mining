@@ -10,15 +10,29 @@ var AppComponent = (function () {
         this.title = "Five Words";
         this.initOpen = true;
         this.regOpen = false;
+        this.wordsOpen = false;
+        this.thanksOpen = false;
     }
-    AppComponent.prototype.initReg = function () {
+    AppComponent.prototype.onRegStart = function () {
         this.initOpen = false;
         this.regOpen = true;
+    };
+    AppComponent.prototype.onWordsStart = function (user) {
+        this.user = user;
+        console.log(this.user);
+        this.regOpen = false;
+        this.wordsOpen = true;
+    };
+    AppComponent.prototype.onWordsDone = function (words) {
+        this.user.words = words;
+        console.log(this.user);
+        //this.wordsOpen  = false;
+        this.thanksOpen = true;
     };
     AppComponent = __decorate([
         Component({
             selector: 'app-root',
-            template: "<h1>{{title}}</h1>\n               <init [hidden]=\"!initOpen\"></init>\n               <reg  [hidden]=\"!regOpen\"></reg>\n               <button type=\"button\" (click)=\"initReg()\">Switcharoo!!!</button>\n                "
+            template: "<h1 id=\"title\"> {{title}} </h1>\n               <init  [hidden]=\"!initOpen\"  (onRegStart)   = \"onRegStart()\"></init>\n               <reg   [hidden]=\"!regOpen\"   (onWordsStart) = \"onWordsStart($event)\"></reg>\n               <words [hidden]=\"!wordsOpen\" (onWordsDone)  = \"onWordsDone($event)\"></words>\n                "
         })
     ], AppComponent);
     return AppComponent;

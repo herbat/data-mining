@@ -3,8 +3,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class User {
     id: number;
     age: number;
-    name: string;
-    profession: string;
+    sex: string;
+    email?: string;
+    words?: string[];
 }
 
 @Component({
@@ -13,18 +14,23 @@ export class User {
 })
 
 export class Register {
-    users: User[];
-    user: User;
-    @Output onWordsStart = new EventEmitter();
+    user: User = {
+        id: Math.random() * 10e16,
+        age: 0,
+        sex: '',
+        email: ''
+    };
+    @Output() onWordsStart: EventEmitter<any> = new EventEmitter();
 
-    submit(): void {
+    submit(sex:string, age:number): void {
         $('#submit-button').addClass('animate');
         $('#submit-button').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
             function (e) { $('#submit-button').removeClass('animate');
         });
-        //this.users.push(this.user);
-        this.onWordsStart.emit();
-        console.log('submitted', this.user.age);
+        this.onWordsStart.emit(this.user);
+        this.user.age = age;
+        this.user.sex = sex;
+        console.log('submitted', this.user);
     };
 
 }
