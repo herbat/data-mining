@@ -244,8 +244,13 @@ thx {
     text-align: center;
 }
 
-thx-row {
+.thx-row {
+    display: block;
     margin-bottom: 50px;
+}
+
+thx input {
+    border-bottom: 1px solid lightgray;
 }
 
 h1.init-done {

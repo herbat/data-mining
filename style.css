@@ -239,28 +239,33 @@ thx {
   text-align: center; }
 
 /* line 247, /Users/atus/Desktop/Data Mining/style.scss */
-thx-row {
+.thx-row {
+  display: block;
   margin-bottom: 50px; }
 
-/* line 251, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 252, /Users/atus/Desktop/Data Mining/style.scss */
+thx input {
+  border-bottom: 1px solid lightgray; }
+
+/* line 256, /Users/atus/Desktop/Data Mining/style.scss */
 h1.init-done {
   transform: translateY(-600%); }
 
-/* line 255, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 260, /Users/atus/Desktop/Data Mining/style.scss */
 button {
   margin-left: auto;
   margin-right: auto;
   background-color: white; }
 
-/* line 261, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 266, /Users/atus/Desktop/Data Mining/style.scss */
 button:hover {
   background-color: #DDD; }
 
-/* line 265, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 270, /Users/atus/Desktop/Data Mining/style.scss */
 button:active {
   outline: 0; }
 
-/* line 270, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 275, /Users/atus/Desktop/Data Mining/style.scss */
 button:focus {
   outline: 0; }
 

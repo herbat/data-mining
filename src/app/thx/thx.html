@@ -3,13 +3,14 @@
     <div class="thx-row">
       <h2>Thank you for submitting your answer!</h2>
     </div>
-    <div class="thx-row">
-      <h3>If you would like to see our stats and results, we can update you on an email adress.</h3>
+    <div class="thx-row" >
+      <h3 *ngIf="!mailAdded; else mTxt">If you would like to see our stats and results, we can update you on an email adress.</h3>
+      <ng-template #mTxt>We'll keep you up to date! </ng-template>
     </div>
-    <div class="thx-row">
+    <div class="thx-row" [hidden] = "mailAdded">
       <input type="email" #email placeholder="your.email@server.com">
     </div>
-    <div class="thx-row">
+    <div class="thx-row" [hidden] = "mailAdded">
       <button (click)="addMail(email.value)">Submit</button>
     </div>
   </div>
