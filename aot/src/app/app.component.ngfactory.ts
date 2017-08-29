@@ -14,12 +14,14 @@ import * as i4 from './reg/reg.component.ngfactory';
 import * as i5 from '../../../src/app/reg/reg.component';
 import * as i6 from './words/words.component.ngfactory';
 import * as i7 from '../../../src/app/words/words.component';
+import * as i8 from './thx/thx.component.ngfactory';
+import * as i9 from '../../../src/app/thx/thx.component';
 const styles_AppComponent:any[] = ([] as any[]);
 export const RenderType_AppComponent:i0.RendererType2 = i0.ɵcrt({encapsulation:2,styles:styles_AppComponent,
     data:{}});
 export function View_AppComponent_0(_l:any):i0.ɵViewDefinition {
   return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'h1',[['id','title']],
-      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      [[8,'hidden',0]],(null as any),(null as any),(null as any),(null as any))),(_l()(),
       i0.ɵted((null as any),[' ',' '])),(_l()(),i0.ɵted((null as any),['\n               '])),
       (_l()(),i0.ɵeld(0,(null as any),(null as any),1,'init',([] as any[]),[[8,'hidden',
           0]],[[(null as any),'onRegStart']],(_v,en,$event) => {
@@ -56,16 +58,32 @@ export function View_AppComponent_0(_l:any):i0.ɵViewDefinition {
             return ad;
           },i6.View_Words_0,i6.RenderType_Words)),i0.ɵdid(49152,(null as any),0,i7.Words,
           ([] as any[]),(null as any),{onWordsDone:'onWordsDone'}),(_l()(),i0.ɵted((null as any),
-          ['\n                ']))],(null as any),(_ck,_v) => {
+          ['\n               '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,
+          'thx',([] as any[]),[[8,'hidden',0]],[[(null as any),'onMailSubmit']],(_v,
+              en,$event) => {
+            var ad:boolean = true;
+            var _co:i1.AppComponent = _v.component;
+            if (('onMailSubmit' === en)) {
+              const pd_0:any = ((<any>_co.onMailSubmit($event)) !== false);
+              ad = (pd_0 && ad);
+            }
+            return ad;
+          },i8.View_Thanks_0,i8.RenderType_Thanks)),i0.ɵdid(49152,(null as any),0,
+          i9.Thanks,([] as any[]),(null as any),{onMailSubmit:'onMailSubmit'}),(_l()(),
+          i0.ɵted((null as any),['\n                ']))],(null as any),(_ck,_v) => {
     var _co:i1.AppComponent = _v.component;
-    const currVal_0:any = _co.title;
-    _ck(_v,1,0,currVal_0);
-    const currVal_1:boolean = !_co.initOpen;
-    _ck(_v,3,0,currVal_1);
-    const currVal_2:boolean = !_co.regOpen;
-    _ck(_v,6,0,currVal_2);
-    const currVal_3:boolean = !_co.wordsOpen;
-    _ck(_v,9,0,currVal_3);
+    const currVal_0:boolean = !_co.initOpen;
+    _ck(_v,0,0,currVal_0);
+    const currVal_1:any = _co.title;
+    _ck(_v,1,0,currVal_1);
+    const currVal_2:boolean = !_co.initOpen;
+    _ck(_v,3,0,currVal_2);
+    const currVal_3:boolean = !_co.regOpen;
+    _ck(_v,6,0,currVal_3);
+    const currVal_4:boolean = !_co.wordsOpen;
+    _ck(_v,9,0,currVal_4);
+    const currVal_5:boolean = !_co.thxOpen;
+    _ck(_v,12,0,currVal_5);
   });
 }
 export function View_AppComponent_Host_0(_l:any):i0.ɵViewDefinition {
@@ -76,4 +94,4 @@ export function View_AppComponent_Host_0(_l:any):i0.ɵViewDefinition {
 }
 export const AppComponentNgFactory:i0.ComponentFactory<i1.AppComponent> = i0.ɵccf('app-root',
     i1.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvYXBwLmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5jb21wb25lbnQudHMuQXBwQ29tcG9uZW50Lmh0bWwiLCJuZzovLy9Vc2Vycy9hdHVzL0Rlc2t0b3AvRGF0YSBNaW5pbmcvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzLkFwcENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxoMSBpZD1cInRpdGxlXCI+IHt7dGl0bGV9fSA8L2gxPlxuICAgICAgICAgICAgICAgPGluaXQgIFtoaWRkZW5dPVwiIWluaXRPcGVuXCIgIChvblJlZ1N0YXJ0KSAgID0gXCJvblJlZ1N0YXJ0KClcIj48L2luaXQ+XG4gICAgICAgICAgICAgICA8cmVnICAgW2hpZGRlbl09XCIhcmVnT3BlblwiICAgKG9uV29yZHNTdGFydCkgPSBcIm9uV29yZHNTdGFydCgkZXZlbnQpXCI+PC9yZWc+XG4gICAgICAgICAgICAgICA8d29yZHMgW2hpZGRlbl09XCIhd29yZHNPcGVuXCIgKG9uV29yZHNEb25lKSAgPSBcIm9uV29yZHNEb25lKCRldmVudClcIj48L3dvcmRzPlxuICAgICAgICAgICAgICAgICIsIjxhcHAtcm9vdD48L2FwcC1yb290PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O29CQ0FBO01BQUEsd0VBQWU7YUFBQSwyQkFBZ0I7TUFDaEI7VUFBQTtRQUFBO1FBQUE7UUFBNkI7VUFBQTtVQUFBO1FBQUE7UUFBN0I7TUFBQSw2Q0FBQTtVQUFBLHVEQUFvRTtVQUFBLHdCQUNwRTtVQUFBO3VCQUFBO1lBQUE7WUFBQTtZQUE2QjtjQUFBO2NBQUE7WUFBQTtZQUE3QjtVQUFBLHFEQUFBO1VBQUE7TUFBMkUsc0RBQzNFO1VBQUE7VUFBQTtZQUFBO1lBQUE7WUFBNkI7Y0FBQTtjQUFBO1lBQUE7WUFBN0I7VUFBQSwrQ0FBQTtVQUFBLHlEQUE0RTtVQUFBOztJQUg1RTtJQUFBO0lBQ087SUFBUCxXQUFPLFNBQVA7SUFDTztJQUFQLFdBQU8sU0FBUDtJQUNPO0lBQVAsV0FBTyxTQUFQOzs7O29CQ0hmO01BQUE7YUFBQTs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvYXBwLmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5jb21wb25lbnQudHMuQXBwQ29tcG9uZW50Lmh0bWwiLCJuZzovLy9Vc2Vycy9hdHVzL0Rlc2t0b3AvRGF0YSBNaW5pbmcvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzLkFwcENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxoMSBpZD1cInRpdGxlXCIgW2hpZGRlbl09XCIhaW5pdE9wZW5cIj4ge3t0aXRsZX19IDwvaDE+XG4gICAgICAgICAgICAgICA8aW5pdCAgW2hpZGRlbl09XCIhaW5pdE9wZW5cIiAgKG9uUmVnU3RhcnQpICAgPSBcIm9uUmVnU3RhcnQoKVwiPjwvaW5pdD5cbiAgICAgICAgICAgICAgIDxyZWcgICBbaGlkZGVuXT1cIiFyZWdPcGVuXCIgICAob25Xb3Jkc1N0YXJ0KSA9IFwib25Xb3Jkc1N0YXJ0KCRldmVudClcIj48L3JlZz5cbiAgICAgICAgICAgICAgIDx3b3JkcyBbaGlkZGVuXT1cIiF3b3Jkc09wZW5cIiAob25Xb3Jkc0RvbmUpICA9IFwib25Xb3Jkc0RvbmUoJGV2ZW50KVwiPjwvd29yZHM+XG4gICAgICAgICAgICAgICA8dGh4ICAgW2hpZGRlbl09XCIhdGh4T3BlblwiICAgKG9uTWFpbFN1Ym1pdCkgPSBcIm9uTWFpbFN1Ym1pdCgkZXZlbnQpXCI+PC90aHg+XG4gICAgICAgICAgICAgICAgIiwiPGFwcC1yb290PjwvYXBwLXJvb3Q+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNBQTtNQUFBLDJFQUFvQzthQUFBLDJCQUFnQjtNQUNyQztVQUFBO1FBQUE7UUFBQTtRQUE2QjtVQUFBO1VBQUE7UUFBQTtRQUE3QjtNQUFBLDZDQUFBO1VBQUEsdURBQW9FO1VBQUEsd0JBQ3BFO1VBQUE7dUJBQUE7WUFBQTtZQUFBO1lBQTZCO2NBQUE7Y0FBQTtZQUFBO1lBQTdCO1VBQUEscURBQUE7VUFBQTtNQUEyRSxzREFDM0U7VUFBQTtVQUFBO1lBQUE7WUFBQTtZQUE2QjtjQUFBO2NBQUE7WUFBQTtZQUE3QjtVQUFBLCtDQUFBO1VBQUEseURBQTRFO1VBQUEsd0JBQzVFO1VBQUE7dUJBQUE7WUFBQTtZQUFBO1lBQTZCO2NBQUE7Y0FBQTtZQUFBO1lBQTdCO1VBQUEsaURBQUE7b0JBQUEsMkRBQTJFO2lCQUFBOztJQUozRTtJQUFmLFdBQWUsU0FBZjtJQUFvQztJQUFBO0lBQ2Q7SUFBUCxXQUFPLFNBQVA7SUFDTztJQUFQLFdBQU8sU0FBUDtJQUNPO0lBQVAsV0FBTyxTQUFQO0lBQ087SUFBUCxZQUFPLFNBQVA7Ozs7b0JDSmY7TUFBQTthQUFBOzs7OyJ9

@@ -10,15 +10,16 @@ var styles_Register = [];
 export var RenderType_Register = i0.ɵcrt({ encapsulation: 2, styles: styles_Register,
     data: {} });
 export function View_Register_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 10, 'div', [['id',
-                'reg']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, [['sex', 1]], null, 0, 'input', [['placeholder',
-                'Gender'], ['type', 'text']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, [['age', 1]], null, 0, 'input', [['placeholder', 'Age'], ['type', 'number']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'div', [['id',
-                'submit-button']], null, [[null, 'click']], function (_v, en, $event) {
+    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 4, 'div', [], null, null, null, null, null)), (_l()(),
+            i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, [['sex', 1]], null, 0, 'input', [['placeholder',
+                'Gender'], ['type', 'text']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [], null, null, null, null, null)), (_l()(),
+            i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, [['age', 1]], null, 0, 'input', [['placeholder',
+                'Age'], ['type', 'number']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [], null, null, null, null, null)), (_l()(),
+            i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'div', [['id', 'submit-button']], null, [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('click' === en)) {
-                var pd_0 = (_co.submit(i0.ɵnov(_v, 3).value, i0.ɵnov(_v, 6).value) !== false);
+                var pd_0 = (_co.submit(i0.ɵnov(_v, 3).value, i0.ɵnov(_v, 9).value) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;

@@ -41,6 +41,12 @@ var Words = (function () {
         }
     };
     ;
+    Words.prototype.setBtn = function () {
+        console.log('button is under setting');
+        var h = $('.word-ip-box').height();
+        $('.next-btn').css({ 'width': h + 'px' });
+        console.log('button width set to', h);
+    };
     __decorate([
         Output(),
         __metadata("design:type", EventEmitter)

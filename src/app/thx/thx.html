@@ -1,0 +1,16 @@
+<div class="pure-g">
+  <div id="thx" class="pure-u-3-5 pure-u-md-1-3 pure-u-lg-1-5 pure-u-xl-1-5 offset-sm-1-5 offset-md-1-3 offset-lg-2-5 offset-xl-2-5">
+    <div class="thx-row">
+      <h2>Thank you for submitting your answer!</h2>
+    </div>
+    <div class="thx-row">
+      <h3>If you would like to see our stats and results, we can update you on an email adress.</h3>
+    </div>
+    <div class="thx-row">
+      <input type="email" #email placeholder="your.email@server.com">
+    </div>
+    <div class="thx-row">
+      <button (click)="addMail(email.value)">Submit</button>
+    </div>
+  </div>
+</div>

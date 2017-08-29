@@ -12,11 +12,13 @@ import * as i4 from './reg/reg.component.ngfactory';
 import * as i5 from '../../../src/app/reg/reg.component';
 import * as i6 from './words/words.component.ngfactory';
 import * as i7 from '../../../src/app/words/words.component';
+import * as i8 from './thx/thx.component.ngfactory';
+import * as i9 from '../../../src/app/thx/thx.component';
 var styles_AppComponent = [];
 export var RenderType_AppComponent = i0.ɵcrt({ encapsulation: 2, styles: styles_AppComponent,
     data: {} });
 export function View_AppComponent_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'h1', [['id', 'title']], null, null, null, null, null)), (_l()(),
+    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'h1', [['id', 'title']], [[8, 'hidden', 0]], null, null, null, null)), (_l()(),
             i0.ɵted(null, [' ', ' '])), (_l()(), i0.ɵted(null, ['\n               '])),
         (_l()(), i0.ɵeld(0, null, null, 1, 'init', [], [[8, 'hidden',
                 0]], [[null, 'onRegStart']], function (_v, en, $event) {
@@ -44,16 +46,29 @@ export function View_AppComponent_0(_l) {
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, i6.View_Words_0, i6.RenderType_Words)), i0.ɵdid(49152, null, 0, i7.Words, [], null, { onWordsDone: 'onWordsDone' }), (_l()(), i0.ɵted(null, ['\n                ']))], null, function (_ck, _v) {
+        }, i6.View_Words_0, i6.RenderType_Words)), i0.ɵdid(49152, null, 0, i7.Words, [], null, { onWordsDone: 'onWordsDone' }), (_l()(), i0.ɵted(null, ['\n               '])), (_l()(), i0.ɵeld(0, null, null, 1, 'thx', [], [[8, 'hidden', 0]], [[null, 'onMailSubmit']], function (_v, en, $event) {
+            var ad = true;
+            var _co = _v.component;
+            if (('onMailSubmit' === en)) {
+                var pd_0 = (_co.onMailSubmit($event) !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, i8.View_Thanks_0, i8.RenderType_Thanks)), i0.ɵdid(49152, null, 0, i9.Thanks, [], null, { onMailSubmit: 'onMailSubmit' }), (_l()(),
+            i0.ɵted(null, ['\n                ']))], null, function (_ck, _v) {
         var _co = _v.component;
-        var currVal_0 = _co.title;
-        _ck(_v, 1, 0, currVal_0);
-        var currVal_1 = !_co.initOpen;
-        _ck(_v, 3, 0, currVal_1);
-        var currVal_2 = !_co.regOpen;
-        _ck(_v, 6, 0, currVal_2);
-        var currVal_3 = !_co.wordsOpen;
-        _ck(_v, 9, 0, currVal_3);
+        var currVal_0 = !_co.initOpen;
+        _ck(_v, 0, 0, currVal_0);
+        var currVal_1 = _co.title;
+        _ck(_v, 1, 0, currVal_1);
+        var currVal_2 = !_co.initOpen;
+        _ck(_v, 3, 0, currVal_2);
+        var currVal_3 = !_co.regOpen;
+        _ck(_v, 6, 0, currVal_3);
+        var currVal_4 = !_co.wordsOpen;
+        _ck(_v, 9, 0, currVal_4);
+        var currVal_5 = !_co.thxOpen;
+        _ck(_v, 12, 0, currVal_5);
     });
 }
 export function View_AppComponent_Host_0(_l) {

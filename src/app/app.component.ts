@@ -3,10 +3,11 @@ import { User } from './reg/reg.component';
 
 @Component ({
     selector : 'app-root',
-    template: `<h1 id="title"> {{title}} </h1>
+    template: `<h1 id="title" [hidden]="!initOpen"> {{title}} </h1>
                <init  [hidden]="!initOpen"  (onRegStart)   = "onRegStart()"></init>
                <reg   [hidden]="!regOpen"   (onWordsStart) = "onWordsStart($event)"></reg>
                <words [hidden]="!wordsOpen" (onWordsDone)  = "onWordsDone($event)"></words>
+               <thx   [hidden]="!thxOpen"   (onMailSubmit) = "onMailSubmit($event)"></thx>
                 `
 })
 
@@ -15,7 +16,7 @@ export class AppComponent {
     initOpen   = true;
     regOpen    = false;
     wordsOpen  = false;
-    thanksOpen = false;
+    thxOpen    = false;
     user: User;
     onRegStart() {
         this.initOpen = false;
@@ -32,7 +33,11 @@ export class AppComponent {
     onWordsDone(words: any) {
         this.user.words = words;
         console.log(this.user);
-        //this.wordsOpen  = false;
-        this.thanksOpen = true;
+        this.wordsOpen  = false;
+        this.thxOpen = true;
+    }
+    
+    onMailSubmit(mail: any) {
+        this.user.email = mail;
     }
 }

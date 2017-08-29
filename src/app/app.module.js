@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { Register } from './reg/reg.component';
 import { Init } from './init/init.component';
 import { Words } from './words/words.component';
+import { Thanks } from './thx/thx.component';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,7 +26,8 @@ var AppModule = (function () {
                 AppComponent,
                 Register,
                 Init,
-                Words
+                Words,
+                Thanks
             ],
             bootstrap: [AppComponent]
         })

@@ -35,5 +35,12 @@ export class Words {
             this.words.push(new FormControl('', Validators.required));
         }
     };
+    
+    setBtn(){
+        console.log('button is under setting');
+        var h = $('.word-ip-box').height();
+        $('.next-btn').css({'width':h+'px'});
+        console.log('button width set to', h);
+    }
 
 }

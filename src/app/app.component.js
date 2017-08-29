@@ -11,7 +11,7 @@ var AppComponent = (function () {
         this.initOpen = true;
         this.regOpen = false;
         this.wordsOpen = false;
-        this.thanksOpen = false;
+        this.thxOpen = false;
     }
     AppComponent.prototype.onRegStart = function () {
         this.initOpen = false;
@@ -26,13 +26,16 @@ var AppComponent = (function () {
     AppComponent.prototype.onWordsDone = function (words) {
         this.user.words = words;
         console.log(this.user);
-        //this.wordsOpen  = false;
-        this.thanksOpen = true;
+        this.wordsOpen = false;
+        this.thxOpen = true;
+    };
+    AppComponent.prototype.onMailSubmit = function (mail) {
+        this.user.email = mail;
     };
     AppComponent = __decorate([
         Component({
             selector: 'app-root',
-            template: "<h1 id=\"title\"> {{title}} </h1>\n               <init  [hidden]=\"!initOpen\"  (onRegStart)   = \"onRegStart()\"></init>\n               <reg   [hidden]=\"!regOpen\"   (onWordsStart) = \"onWordsStart($event)\"></reg>\n               <words [hidden]=\"!wordsOpen\" (onWordsDone)  = \"onWordsDone($event)\"></words>\n                "
+            template: "<h1 id=\"title\" [hidden]=\"!initOpen\"> {{title}} </h1>\n               <init  [hidden]=\"!initOpen\"  (onRegStart)   = \"onRegStart()\"></init>\n               <reg   [hidden]=\"!regOpen\"   (onWordsStart) = \"onWordsStart($event)\"></reg>\n               <words [hidden]=\"!wordsOpen\" (onWordsDone)  = \"onWordsDone($event)\"></words>\n               <thx   [hidden]=\"!thxOpen\"   (onMailSubmit) = \"onMailSubmit($event)\"></thx>\n                "
         })
     ], AppComponent);
     return AppComponent;
