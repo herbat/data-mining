@@ -32,15 +32,25 @@ export class Words {
 
     next(i : number) {
         if(this.words.length < 5){
-            this.words.push(new FormControl('', Validators.required));
+            this.words.push(new FormControl('', [
+                Validators.required,
+                Validators.minLength(3),
+                Validators.maxLength(20),
+                Validators.pattern('^[A-Za-z]+$')
+            ]));
         }
     };
     
-    setBtn(){
-        console.log('button is under setting');
-        var h = $('.word-ip-box').height();
-        $('.next-btn').css({'width':h+'px'});
-        console.log('button width set to', h);
+    checkIfValid(i: number){
+        console.log('validity checked on', i);
+        var input = $('#'+i);
+        var w = 0;
+        if (input.hasClass('ng-invalid') && input.hasClass('ng-touched')) {
+            w = input.height() + input.width();
+            $('#inv'+i).css({'width': w + 'px'});
+            $('#inv'+i).show('slow');
+        } else { $('#inv'+i).hide('slow');}
+
     }
 
 }

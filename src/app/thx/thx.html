@@ -4,14 +4,16 @@
       <h2>Thank you for submitting your answer!</h2>
     </div>
     <div class="thx-row" >
-      <h3 *ngIf="!mailAdded; else mTxt">If you would like to see our stats and results, we can update you on an email adress.</h3>
+      <h3 *ngIf="!mailAdded && !noThx; else mTxt">If you would like to see our stats and results, we can update you on an email adress.</h3>
       <ng-template #mTxt>We'll keep you up to date! </ng-template>
     </div>
-    <div class="thx-row" [hidden] = "mailAdded">
+    <div class="thx-row" [hidden] = "mailAdded || noThx">
       <input type="email" #email placeholder="your.email@server.com">
     </div>
-    <div class="thx-row" [hidden] = "mailAdded">
-      <button (click)="addMail(email.value)">Submit</button>
+    <div class="thx-row"  [hidden] = "mailAdded || noThx">
+        <button (click)="noThx()">No thanks!</button>
+        <button (click)="addMail(email.value)">Submit</button>
     </div>
+
   </div>
 </div>

@@ -37,15 +37,27 @@ var Words = (function () {
     };
     Words.prototype.next = function (i) {
         if (this.words.length < 5) {
-            this.words.push(new FormControl('', Validators.required));
+            this.words.push(new FormControl('', [
+                Validators.required,
+                Validators.minLength(3),
+                Validators.maxLength(20),
+                Validators.pattern('^[A-Za-z]+$')
+            ]));
         }
     };
     ;
-    Words.prototype.setBtn = function () {
-        console.log('button is under setting');
-        var h = $('.word-ip-box').height();
-        $('.next-btn').css({ 'width': h + 'px' });
-        console.log('button width set to', h);
+    Words.prototype.checkIfValid = function (i) {
+        console.log('validity checked on', i);
+        var input = $('#' + i);
+        var w = 0;
+        if (input.hasClass('ng-invalid') && input.hasClass('ng-touched')) {
+            w = input.height() + input.width();
+            $('#inv' + i).css({ 'width': w + 'px' });
+            $('#inv' + i).show('slow');
+        }
+        else {
+            $('#inv' + i).hide('slow');
+        }
     };
     __decorate([
         Output(),

@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { User } from './reg/reg.component';
+//var mc = require('mongodb').MongoClient;
+//var assert = require('assert');
+//var ObjectId = require('mongodb').ObjectID;
+//var url = 'mongodb://localhost:27017/test';
 
 @Component ({
     selector : 'app-root',
@@ -39,5 +43,11 @@ export class AppComponent {
     
     onMailSubmit(mail: any) {
         this.user.email = mail;
+        this.submitData();
+    }
+
+    submitData(){
+        //TODO submit user data to mongoDB
+        console.log('data submitted');
     }
 }

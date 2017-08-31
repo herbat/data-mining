@@ -8,9 +8,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class Thanks {
     @Output() private onMailSubmit = new EventEmitter();
     mailAdded = false;
+    noThx = false;
     
     addMail(mail: any){
         this.onMailSubmit.emit(mail);
         this.mailAdded = true;
+    }
+
+    noThx(){
+        this.onMailSubmit.emit('');
+        this.noThx = true;
     }
 }
