@@ -1,7 +1,9 @@
 import { NgModule }      from '@angular/core';
+import { AppComponent }  from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppComponent }  from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { Register }      from './reg/reg.component';
 import { Init }          from './init/init.component';
 import { Words }         from './words/words.component';
@@ -9,9 +11,10 @@ import { Thanks }        from './thx/thx.component';
 
 @NgModule({
     imports:      [
-        BrowserModule,
         FormsModule,
-        ReactiveFormsModule
+        BrowserModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule
     ],
     declarations: [
         AppComponent,

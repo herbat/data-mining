@@ -1,4 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import {
+    trigger,
+    state,
+    style,
+    animate,
+    transition
+} from '@angular/animations';
 
 export class User {
     id: number;

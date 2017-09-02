@@ -12,10 +12,15 @@ var Thanks = (function () {
     function Thanks() {
         this.onMailSubmit = new EventEmitter();
         this.mailAdded = false;
+        this.noThx = false;
     }
     Thanks.prototype.addMail = function (mail) {
         this.onMailSubmit.emit(mail);
         this.mailAdded = true;
+    };
+    Thanks.prototype.ifNoThx = function () {
+        this.onMailSubmit.emit('');
+        this.noThx = true;
     };
     __decorate([
         Output(),

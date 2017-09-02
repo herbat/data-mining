@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
 import { User } from './reg/reg.component';
+import {
+    trigger,
+    state,
+    style,
+    animate,
+    transition
+} from '@angular/animations';
 //var mc = require('mongodb').MongoClient;
 //var assert = require('assert');
 //var ObjectId = require('mongodb').ObjectID;

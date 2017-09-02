@@ -5,6 +5,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from '@angular/core';
+//var mc = require('mongodb').MongoClient;
+//var assert = require('assert');
+//var ObjectId = require('mongodb').ObjectID;
+//var url = 'mongodb://localhost:27017/test';
 var AppComponent = (function () {
     function AppComponent() {
         this.title = "Five Words";
@@ -31,6 +35,11 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.onMailSubmit = function (mail) {
         this.user.email = mail;
+        this.submitData();
+    };
+    AppComponent.prototype.submitData = function () {
+        //TODO submit user data to mongoDB
+        console.log('data submitted');
     };
     AppComponent = __decorate([
         Component({

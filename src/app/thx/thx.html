@@ -5,13 +5,13 @@
     </div>
     <div class="thx-row" >
       <h3 *ngIf="!mailAdded && !noThx; else mTxt">If you would like to see our stats and results, we can update you on an email adress.</h3>
-      <ng-template #mTxt>We'll keep you up to date! </ng-template>
+      <ng-template #mTxt ><p *ngIf="mailAdded">We'll keep you up to date!</p></ng-template>
     </div>
     <div class="thx-row" [hidden] = "mailAdded || noThx">
       <input type="email" #email placeholder="your.email@server.com">
     </div>
     <div class="thx-row"  [hidden] = "mailAdded || noThx">
-        <button (click)="noThx()">No thanks!</button>
+        <button (click)="ifNoThx()">No thanks!</button>
         <button (click)="addMail(email.value)">Submit</button>
     </div>
 

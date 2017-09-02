@@ -1,4 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import {
+    trigger,
+    state,
+    style,
+    animate,
+    transition
+} from '@angular/animations';
 
 @Component ({
     selector:'thx',
@@ -15,7 +22,7 @@ export class Thanks {
         this.mailAdded = true;
     }
 
-    noThx(){
+    ifNoThx(){
         this.onMailSubmit.emit('');
         this.noThx = true;
     }
