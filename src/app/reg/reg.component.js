@@ -17,9 +17,8 @@ export { User };
 var Register = (function () {
     function Register() {
         this.user = {
-            id: Math.random() * 10e16,
             age: 0,
-            sex: '',
+            sex: 3,
             email: ''
         };
         this.onWordsStart = new EventEmitter();
@@ -42,7 +41,7 @@ var Register = (function () {
     Register = __decorate([
         Component({
             selector: 'reg',
-            templateUrl: './reg.html'
+            templateUrl: './reg.html',
         })
     ], Register);
     return Register;

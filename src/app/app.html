@@ -1,0 +1,19 @@
+<div id="title-logo" [hidden]="!open.init"></div>
+<init  [hidden]      ="!open.init"
+       (onRegStart)  ="onLeaf('init')"
+       [@enter]      ="states.init"
+       (@enter.done) ="onLeafEnd('init', 'reg')"></init>
+
+<reg   [hidden]      ="!open.reg"
+       (onWordsStart)="onLeaf('reg');addUser($event)"
+       [@enter]      ="states.reg"
+       (@enter.done) ="onLeafEnd('reg', 'words')"></reg>
+
+<words [hidden]      ="!open.words"
+       (onWordsDone) ="onLeaf('words');addWords($event)"
+       [@enter]      ="states.words"
+       (@enter.done) ="onLeafEnd('words', 'thx')"></words>
+
+<thx   [hidden]      ="!open.thx"
+       (onMailSubmit)="onLeaf('mail');addMail($event)"
+       [@enter]      ="states.thx"></thx>

@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 var Words = (function () {
     function Words() {
         this.question = 'Write five words that pop into your head about this talk!';
@@ -43,6 +44,7 @@ var Words = (function () {
                 Validators.maxLength(20),
                 Validators.pattern('^[A-Za-z]+$')
             ]));
+            $('#' + i + 1).focus();
         }
     };
     ;
@@ -66,7 +68,16 @@ var Words = (function () {
     Words = __decorate([
         Component({
             selector: 'words',
-            templateUrl: './words.html'
+            templateUrl: './words.html',
+            animations: [
+                trigger('enter', [
+                    state('in', style({ transform: 'translateX(0)' })),
+                    transition(':enter', [
+                        style({ transform: 'translateX(100%)' }),
+                        animate('400ms ease-out')
+                    ]),
+                ])
+            ]
         })
     ], Words);
     return Words;

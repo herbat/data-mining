@@ -5,46 +5,69 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from '@angular/core';
-//var mc = require('mongodb').MongoClient;
-//var assert = require('assert');
-//var ObjectId = require('mongodb').ObjectID;
-//var url = 'mongodb://localhost:27017/test';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 var AppComponent = (function () {
     function AppComponent() {
         this.title = "Five Words";
-        this.initOpen = true;
-        this.regOpen = false;
-        this.wordsOpen = false;
-        this.thxOpen = false;
+        this.states = {
+            init: 'shown',
+            reg: 'hidden',
+            words: 'hidden',
+            thx: 'hidden'
+        };
+        this.open = {
+            init: true,
+            reg: false,
+            words: false,
+            thx: false
+        };
+        this.leafing = false;
     }
-    AppComponent.prototype.onRegStart = function () {
-        this.initOpen = false;
-        this.regOpen = true;
-    };
-    AppComponent.prototype.onWordsStart = function (user) {
-        this.user = user;
-        console.log(this.user);
-        this.regOpen = false;
-        this.wordsOpen = true;
-    };
-    AppComponent.prototype.onWordsDone = function (words) {
-        this.user.words = words;
-        console.log(this.user);
-        this.wordsOpen = false;
-        this.thxOpen = true;
-    };
-    AppComponent.prototype.onMailSubmit = function (mail) {
-        this.user.email = mail;
-        this.submitData();
-    };
     AppComponent.prototype.submitData = function () {
         //TODO submit user data to mongoDB
+        var dat = JSON.stringify(this.user);
+        console.log(dat);
+        $.post("/data", dat, function (data) {
+            console.log("Response: " + data);
+        });
+        console.log(this.user);
         console.log('data submitted');
+    };
+    AppComponent.prototype.onLeaf = function (currentPage) {
+        this.leafing = true;
+        this.states[currentPage] = 'hidden2';
+    };
+    AppComponent.prototype.onLeafEnd = function (currentPage, nextPage) {
+        if (this.leafing) {
+            this.open[currentPage] = false;
+            this.open[nextPage] = true;
+            this.states[nextPage] = 'shown';
+            this.leafing = false;
+        }
+    };
+    AppComponent.prototype.addUser = function (user) {
+        this.user = user;
+    };
+    AppComponent.prototype.addWords = function (words) {
+        this.user.words = words;
+    };
+    AppComponent.prototype.addMail = function (mail) {
+        this.user.email = mail;
+        this.submitData();
     };
     AppComponent = __decorate([
         Component({
             selector: 'app-root',
-            template: "<h1 id=\"title\" [hidden]=\"!initOpen\"> {{title}} </h1>\n               <init  [hidden]=\"!initOpen\"  (onRegStart)   = \"onRegStart()\"></init>\n               <reg   [hidden]=\"!regOpen\"   (onWordsStart) = \"onWordsStart($event)\"></reg>\n               <words [hidden]=\"!wordsOpen\" (onWordsDone)  = \"onWordsDone($event)\"></words>\n               <thx   [hidden]=\"!thxOpen\"   (onMailSubmit) = \"onMailSubmit($event)\"></thx>\n                "
+            templateUrl: './app.html',
+            animations: [
+                trigger('enter', [
+                    state('hidden', style({ transform: 'translateX(1000px)' })),
+                    state('shown', style({ transform: 'translateX(0)' })),
+                    state('hidden2', style({ transform: 'translateX(-1000px)' })),
+                    transition('hidden => shown', animate('400ms ease-out')),
+                    transition('shown => hidden2', animate('400ms ease-in'))
+                ])
+            ]
         })
     ], AppComponent);
     return AppComponent;

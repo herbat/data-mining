@@ -5,30 +5,59 @@
  */
 /* tslint:disable */
 import * as i0 from '@angular/core';
-import * as i1 from '../../../../src/app/reg/reg.component';
+import * as i1 from '@angular/forms';
+import * as i2 from '../../../../src/app/reg/reg.component';
 var styles_Register = [];
 export var RenderType_Register = i0.ɵcrt({ encapsulation: 2, styles: styles_Register,
     data: {} });
 export function View_Register_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 4, 'div', [], null, null, null, null, null)), (_l()(),
-            i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, [['sex', 1]], null, 0, 'input', [['placeholder',
-                'Gender'], ['type', 'text']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [], null, null, null, null, null)), (_l()(),
-            i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i0.ɵeld(0, [['age', 1]], null, 0, 'input', [['placeholder',
-                'Age'], ['type', 'number']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [], null, null, null, null, null)), (_l()(),
-            i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 1, 'div', [['id', 'submit-button']], null, [[null, 'click']], function (_v, en, $event) {
+    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 38, 'div', [['class',
+                'pure-g']], null, null, null, null, null)),
+        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 24, 'div', [['class', 'row pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4 offset-sm-1-4 offset-md-1-3 offset-lg-3-8']], null, null, null, null, null)),
+        (_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵeld(0, [['sex', 1]], null, 21, 'select', [['placeholder', 'Gender'], ['type', 'text']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n      '])), (_l()(), i0.ɵeld(0, null, null, 3, 'option', [['value', '3']], null, null, null, null, null)), i0.ɵdid(147456, null, 0, i1.NgSelectOption, [i0.ElementRef,
+            i0.Renderer2, [8, null]], { value: [0, 'value'] }, null), i0.ɵdid(147456, null, 0, i1.ɵq, [i0.ElementRef, i0.Renderer2, [8, null]], { value: [0,
+                'value'] }, null), (_l()(), i0.ɵted(null, ['gender'])),
+        (_l()(), i0.ɵted(null, ['\n      '])), (_l()(), i0.ɵeld(0, null, null, 3, 'option', [['value', '0']], null, null, null, null, null)), i0.ɵdid(147456, null, 0, i1.NgSelectOption, [i0.ElementRef, i0.Renderer2, [8, null]], { value: [0, 'value'] }, null),
+        i0.ɵdid(147456, null, 0, i1.ɵq, [i0.ElementRef, i0.Renderer2, [8, null]], { value: [0, 'value'] }, null), (_l()(), i0.ɵted(null, ['female'])),
+        (_l()(), i0.ɵted(null, ['\n      '])), (_l()(), i0.ɵeld(0, null, null, 3, 'option', [['value', '1']], null, null, null, null, null)), i0.ɵdid(147456, null, 0, i1.NgSelectOption, [i0.ElementRef, i0.Renderer2, [8, null]], { value: [0, 'value'] }, null),
+        i0.ɵdid(147456, null, 0, i1.ɵq, [i0.ElementRef, i0.Renderer2, [8, null]], { value: [0, 'value'] }, null), (_l()(), i0.ɵted(null, ['male'])),
+        (_l()(), i0.ɵted(null, ['\n      '])), (_l()(), i0.ɵeld(0, null, null, 3, 'option', [['value', '2']], null, null, null, null, null)), i0.ɵdid(147456, null, 0, i1.NgSelectOption, [i0.ElementRef, i0.Renderer2, [8, null]], { value: [0, 'value'] }, null),
+        i0.ɵdid(147456, null, 0, i1.ɵq, [i0.ElementRef, i0.Renderer2, [8, null]], { value: [0, 'value'] }, null), (_l()(), i0.ɵted(null, ['x'])),
+        (_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵted(null, ['\n  '])),
+        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 3, 'div', [['class', 'row pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4 offset-sm-1-4 offset-md-1-3 offset-lg-3-8']], null, null, null, null, null)),
+        (_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵeld(0, [['age', 1]], null, 0, 'input', [['placeholder', 'Age'], ['type', 'number']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [['class', 'row pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4 offset-sm-1-4 offset-md-1-3 offset-lg-3-8']], null, null, null, null, null)),
+        (_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵeld(0, null, null, 1, 'button', [], null, [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('click' === en)) {
-                var pd_0 = (_co.submit(i0.ɵnov(_v, 3).value, i0.ɵnov(_v, 9).value) !== false);
+                var pd_0 = (_co.submit(i0.ɵnov(_v, 4).value, i0.ɵnov(_v, 30).value) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), (_l()(), i0.ɵted(null, ['Next'])), (_l()(),
-            i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, null);
+        }, null, null)), (_l()(), i0.ɵted(null, ['Next'])),
+        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵted(null, ['\n'])),
+        (_l()(), i0.ɵted(null, ['\n\n']))], function (_ck, _v) {
+        var currVal_0 = '3';
+        _ck(_v, 7, 0, currVal_0);
+        var currVal_1 = '3';
+        _ck(_v, 8, 0, currVal_1);
+        var currVal_2 = '0';
+        _ck(_v, 12, 0, currVal_2);
+        var currVal_3 = '0';
+        _ck(_v, 13, 0, currVal_3);
+        var currVal_4 = '1';
+        _ck(_v, 17, 0, currVal_4);
+        var currVal_5 = '1';
+        _ck(_v, 18, 0, currVal_5);
+        var currVal_6 = '2';
+        _ck(_v, 22, 0, currVal_6);
+        var currVal_7 = '2';
+        _ck(_v, 23, 0, currVal_7);
+    }, null);
 }
 export function View_Register_Host_0(_l) {
     return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'reg', [], null, null, null, View_Register_0, RenderType_Register)),
-        i0.ɵdid(49152, null, 0, i1.Register, [], null, null)], null, null);
+        i0.ɵdid(49152, null, 0, i2.Register, [], null, null)], null, null);
 }
-export var RegisterNgFactory = i0.ɵccf('reg', i1.Register, View_Register_Host_0, {}, { onWordsStart: 'onWordsStart' }, []);
+export var RegisterNgFactory = i0.ɵccf('reg', i2.Register, View_Register_Host_0, {}, { onWordsStart: 'onWordsStart' }, []);
 //# sourceMappingURL=reg.component.ngfactory.js.map

@@ -11,8 +11,8 @@
       <input type="email" #email placeholder="your.email@server.com">
     </div>
     <div class="thx-row"  [hidden] = "mailAdded || noThx">
-        <button (click)="ifNoThx()">No thanks!</button>
-        <button (click)="addMail(email.value)">Submit</button>
+        <button (click)="ifNoThx()" class="alt">No thanks!</button>
+        <button type="submit" (click)="addMail(email.value)">Submit</button>
     </div>
 
   </div>

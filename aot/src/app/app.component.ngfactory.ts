@@ -18,72 +18,95 @@ import * as i8 from './thx/thx.component.ngfactory';
 import * as i9 from '../../../src/app/thx/thx.component';
 const styles_AppComponent:any[] = ([] as any[]);
 export const RenderType_AppComponent:i0.RendererType2 = i0.ɵcrt({encapsulation:2,styles:styles_AppComponent,
-    data:{}});
+    data:{'animation':[{type:7,name:'enter',definitions:[{type:0,name:'hidden',styles:{type:6,
+        styles:{transform:'translateX(1000px)'},offset:(null as any)},options:(undefined as any)},
+        {type:0,name:'shown',styles:{type:6,styles:{transform:'translateX(0)'},offset:(null as any)},
+            options:(undefined as any)},{type:0,name:'hidden2',styles:{type:6,styles:{transform:'translateX(-1000px)'},
+            offset:(null as any)},options:(undefined as any)},{type:1,expr:'hidden => shown',
+            animation:{type:4,styles:(null as any),timings:'400ms ease-out'},options:(null as any)},
+        {type:1,expr:'shown => hidden2',animation:{type:4,styles:(null as any),timings:'400ms ease-in'},
+            options:(null as any)}],options:{}}]}});
 export function View_AppComponent_0(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'h1',[['id','title']],
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),0,'div',[['id','title-logo']],
       [[8,'hidden',0]],(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),[' ',' '])),(_l()(),i0.ɵted((null as any),['\n               '])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),1,'init',([] as any[]),[[8,'hidden',
-          0]],[[(null as any),'onRegStart']],(_v,en,$event) => {
+      i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+      1,'init',([] as any[]),[[8,'hidden',0],[24,'@enter',0]],[[(null as any),'onRegStart'],
+          [(null as any),'@enter.done']],(_v,en,$event) => {
         var ad:boolean = true;
         var _co:i1.AppComponent = _v.component;
         if (('onRegStart' === en)) {
-          const pd_0:any = ((<any>_co.onRegStart()) !== false);
+          const pd_0:any = ((<any>_co.onLeaf('init')) !== false);
           ad = (pd_0 && ad);
+        }
+        if (('@enter.done' === en)) {
+          const pd_1:any = ((<any>_co.onLeafEnd('init','reg')) !== false);
+          ad = (pd_1 && ad);
         }
         return ad;
       },i2.View_Init_0,i2.RenderType_Init)),i0.ɵdid(49152,(null as any),0,i3.Init,
-          ([] as any[]),(null as any),{onRegStart:'onRegStart'}),(_l()(),i0.ɵted((null as any),
-          ['\n               '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,
-          'reg',([] as any[]),[[8,'hidden',0]],[[(null as any),'onWordsStart']],(_v,
-              en,$event) => {
-            var ad:boolean = true;
-            var _co:i1.AppComponent = _v.component;
-            if (('onWordsStart' === en)) {
-              const pd_0:any = ((<any>_co.onWordsStart($event)) !== false);
-              ad = (pd_0 && ad);
-            }
-            return ad;
-          },i4.View_Register_0,i4.RenderType_Register)),i0.ɵdid(49152,(null as any),
-          0,i5.Register,([] as any[]),(null as any),{onWordsStart:'onWordsStart'}),
-      (_l()(),i0.ɵted((null as any),['\n               '])),(_l()(),i0.ɵeld(0,(null as any),
-          (null as any),1,'words',([] as any[]),[[8,'hidden',0]],[[(null as any),'onWordsDone']],
-          (_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i1.AppComponent = _v.component;
-            if (('onWordsDone' === en)) {
-              const pd_0:any = ((<any>_co.onWordsDone($event)) !== false);
-              ad = (pd_0 && ad);
-            }
-            return ad;
-          },i6.View_Words_0,i6.RenderType_Words)),i0.ɵdid(49152,(null as any),0,i7.Words,
-          ([] as any[]),(null as any),{onWordsDone:'onWordsDone'}),(_l()(),i0.ɵted((null as any),
-          ['\n               '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,
-          'thx',([] as any[]),[[8,'hidden',0]],[[(null as any),'onMailSubmit']],(_v,
-              en,$event) => {
-            var ad:boolean = true;
-            var _co:i1.AppComponent = _v.component;
-            if (('onMailSubmit' === en)) {
-              const pd_0:any = ((<any>_co.onMailSubmit($event)) !== false);
-              ad = (pd_0 && ad);
-            }
-            return ad;
-          },i8.View_Thanks_0,i8.RenderType_Thanks)),i0.ɵdid(49152,(null as any),0,
-          i9.Thanks,([] as any[]),(null as any),{onMailSubmit:'onMailSubmit'}),(_l()(),
-          i0.ɵted((null as any),['\n                ']))],(null as any),(_ck,_v) => {
+      ([] as any[]),(null as any),{onRegStart:'onRegStart'}),(_l()(),i0.ɵted((null as any),
+      ['\n\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'reg',([] as any[]),
+      [[8,'hidden',0],[24,'@enter',0]],[[(null as any),'onWordsStart'],[(null as any),
+          '@enter.done']],(_v,en,$event) => {
+        var ad:boolean = true;
+        var _co:i1.AppComponent = _v.component;
+        if (('onWordsStart' === en)) {
+          _co.onLeaf('reg');
+          const pd_0:any = ((<any>_co.addUser($event)) !== false);
+          ad = (pd_0 && ad);
+        }
+        if (('@enter.done' === en)) {
+          const pd_1:any = ((<any>_co.onLeafEnd('reg','words')) !== false);
+          ad = (pd_1 && ad);
+        }
+        return ad;
+      },i4.View_Register_0,i4.RenderType_Register)),i0.ɵdid(49152,(null as any),0,
+      i5.Register,([] as any[]),(null as any),{onWordsStart:'onWordsStart'}),(_l()(),
+      i0.ɵted((null as any),['\n\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+      1,'words',([] as any[]),[[8,'hidden',0],[24,'@enter',0]],[[(null as any),'onWordsDone'],
+          [(null as any),'@enter.done']],(_v,en,$event) => {
+        var ad:boolean = true;
+        var _co:i1.AppComponent = _v.component;
+        if (('onWordsDone' === en)) {
+          _co.onLeaf('words');
+          const pd_0:any = ((<any>_co.addWords($event)) !== false);
+          ad = (pd_0 && ad);
+        }
+        if (('@enter.done' === en)) {
+          const pd_1:any = ((<any>_co.onLeafEnd('words','thx')) !== false);
+          ad = (pd_1 && ad);
+        }
+        return ad;
+      },i6.View_Words_0,i6.RenderType_Words)),i0.ɵdid(49152,(null as any),0,i7.Words,
+      ([] as any[]),(null as any),{onWordsDone:'onWordsDone'}),(_l()(),i0.ɵted((null as any),
+      ['\n\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'thx',([] as any[]),
+      [[8,'hidden',0],[24,'@enter',0]],[[(null as any),'onMailSubmit']],(_v,en,$event) => {
+        var ad:boolean = true;
+        var _co:i1.AppComponent = _v.component;
+        if (('onMailSubmit' === en)) {
+          _co.onLeaf('mail');
+          const pd_0:any = ((<any>_co.addMail($event)) !== false);
+          ad = (pd_0 && ad);
+        }
+        return ad;
+      },i8.View_Thanks_0,i8.RenderType_Thanks)),i0.ɵdid(49152,(null as any),0,i9.Thanks,
+      ([] as any[]),(null as any),{onMailSubmit:'onMailSubmit'})],(null as any),(_ck,
+      _v) => {
     var _co:i1.AppComponent = _v.component;
-    const currVal_0:boolean = !_co.initOpen;
+    const currVal_0:boolean = !_co.open.init;
     _ck(_v,0,0,currVal_0);
-    const currVal_1:any = _co.title;
-    _ck(_v,1,0,currVal_1);
-    const currVal_2:boolean = !_co.initOpen;
-    _ck(_v,3,0,currVal_2);
-    const currVal_3:boolean = !_co.regOpen;
-    _ck(_v,6,0,currVal_3);
-    const currVal_4:boolean = !_co.wordsOpen;
-    _ck(_v,9,0,currVal_4);
-    const currVal_5:boolean = !_co.thxOpen;
-    _ck(_v,12,0,currVal_5);
+    const currVal_1:boolean = !_co.open.init;
+    const currVal_2:any = _co.states.init;
+    _ck(_v,2,0,currVal_1,currVal_2);
+    const currVal_3:boolean = !_co.open.reg;
+    const currVal_4:any = _co.states.reg;
+    _ck(_v,5,0,currVal_3,currVal_4);
+    const currVal_5:boolean = !_co.open.words;
+    const currVal_6:any = _co.states.words;
+    _ck(_v,8,0,currVal_5,currVal_6);
+    const currVal_7:boolean = !_co.open.thx;
+    const currVal_8:any = _co.states.thx;
+    _ck(_v,11,0,currVal_7,currVal_8);
   });
 }
 export function View_AppComponent_Host_0(_l:any):i0.ɵViewDefinition {
@@ -94,4 +117,4 @@ export function View_AppComponent_Host_0(_l:any):i0.ɵViewDefinition {
 }
 export const AppComponentNgFactory:i0.ComponentFactory<i1.AppComponent> = i0.ɵccf('app-root',
     i1.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvYXBwLmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5jb21wb25lbnQudHMuQXBwQ29tcG9uZW50Lmh0bWwiLCJuZzovLy9Vc2Vycy9hdHVzL0Rlc2t0b3AvRGF0YSBNaW5pbmcvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzLkFwcENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxoMSBpZD1cInRpdGxlXCIgW2hpZGRlbl09XCIhaW5pdE9wZW5cIj4ge3t0aXRsZX19IDwvaDE+XG4gICAgICAgICAgICAgICA8aW5pdCAgW2hpZGRlbl09XCIhaW5pdE9wZW5cIiAgKG9uUmVnU3RhcnQpICAgPSBcIm9uUmVnU3RhcnQoKVwiPjwvaW5pdD5cbiAgICAgICAgICAgICAgIDxyZWcgICBbaGlkZGVuXT1cIiFyZWdPcGVuXCIgICAob25Xb3Jkc1N0YXJ0KSA9IFwib25Xb3Jkc1N0YXJ0KCRldmVudClcIj48L3JlZz5cbiAgICAgICAgICAgICAgIDx3b3JkcyBbaGlkZGVuXT1cIiF3b3Jkc09wZW5cIiAob25Xb3Jkc0RvbmUpICA9IFwib25Xb3Jkc0RvbmUoJGV2ZW50KVwiPjwvd29yZHM+XG4gICAgICAgICAgICAgICA8dGh4ICAgW2hpZGRlbl09XCIhdGh4T3BlblwiICAgKG9uTWFpbFN1Ym1pdCkgPSBcIm9uTWFpbFN1Ym1pdCgkZXZlbnQpXCI+PC90aHg+XG4gICAgICAgICAgICAgICAgIiwiPGFwcC1yb290PjwvYXBwLXJvb3Q+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNBQTtNQUFBLDJFQUFvQzthQUFBLDJCQUFnQjtNQUNyQztVQUFBO1FBQUE7UUFBQTtRQUE2QjtVQUFBO1VBQUE7UUFBQTtRQUE3QjtNQUFBLDZDQUFBO1VBQUEsdURBQW9FO1VBQUEsd0JBQ3BFO1VBQUE7dUJBQUE7WUFBQTtZQUFBO1lBQTZCO2NBQUE7Y0FBQTtZQUFBO1lBQTdCO1VBQUEscURBQUE7VUFBQTtNQUEyRSxzREFDM0U7VUFBQTtVQUFBO1lBQUE7WUFBQTtZQUE2QjtjQUFBO2NBQUE7WUFBQTtZQUE3QjtVQUFBLCtDQUFBO1VBQUEseURBQTRFO1VBQUEsd0JBQzVFO1VBQUE7dUJBQUE7WUFBQTtZQUFBO1lBQTZCO2NBQUE7Y0FBQTtZQUFBO1lBQTdCO1VBQUEsaURBQUE7b0JBQUEsMkRBQTJFO2lCQUFBOztJQUozRTtJQUFmLFdBQWUsU0FBZjtJQUFvQztJQUFBO0lBQ2Q7SUFBUCxXQUFPLFNBQVA7SUFDTztJQUFQLFdBQU8sU0FBUDtJQUNPO0lBQVAsV0FBTyxTQUFQO0lBQ087SUFBUCxZQUFPLFNBQVA7Ozs7b0JDSmY7TUFBQTthQUFBOzs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvYXBwLmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5odG1sIiwibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvYXBwLmNvbXBvbmVudC50cy5BcHBDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGlkPVwidGl0bGUtbG9nb1wiIFtoaWRkZW5dPVwiIW9wZW4uaW5pdFwiPjwvZGl2PlxuPGluaXQgIFtoaWRkZW5dICAgICAgPVwiIW9wZW4uaW5pdFwiICBcbiAgICAgICAob25SZWdTdGFydCkgID1cIm9uTGVhZignaW5pdCcpXCIgXG4gICAgICAgW0BlbnRlcl0gICAgICA9XCJzdGF0ZXMuaW5pdFwiIFxuICAgICAgIChAZW50ZXIuZG9uZSkgPVwib25MZWFmRW5kKCdpbml0JywgJ3JlZycpXCI+PC9pbml0PlxuXG48cmVnICAgW2hpZGRlbl0gICAgICA9XCIhb3Blbi5yZWdcIiAgIFxuICAgICAgIChvbldvcmRzU3RhcnQpPVwib25MZWFmKCdyZWcnKTthZGRVc2VyKCRldmVudClcIiBcbiAgICAgICBbQGVudGVyXSAgICAgID1cInN0YXRlcy5yZWdcIiBcbiAgICAgICAoQGVudGVyLmRvbmUpID1cIm9uTGVhZkVuZCgncmVnJywgJ3dvcmRzJylcIj48L3JlZz5cblxuPHdvcmRzIFtoaWRkZW5dICAgICAgPVwiIW9wZW4ud29yZHNcIiBcbiAgICAgICAob25Xb3Jkc0RvbmUpID1cIm9uTGVhZignd29yZHMnKTthZGRXb3JkcygkZXZlbnQpXCIgXG4gICAgICAgW0BlbnRlcl0gICAgICA9XCJzdGF0ZXMud29yZHNcIiBcbiAgICAgICAoQGVudGVyLmRvbmUpID1cIm9uTGVhZkVuZCgnd29yZHMnLCAndGh4JylcIj48L3dvcmRzPlxuXG48dGh4ICAgW2hpZGRlbl0gICAgICA9XCIhb3Blbi50aHhcIiAgIFxuICAgICAgIChvbk1haWxTdWJtaXQpPVwib25MZWFmKCdtYWlsJyk7YWRkTWFpbCgkZXZlbnQpXCIgXG4gICAgICAgW0BlbnRlcl0gICAgICA9XCJzdGF0ZXMudGh4XCI+PC90aHg+IiwiPGFwcC1yb290PjwvYXBwLXJvb3Q+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQSwyRUFBaUQ7YUFBQSx3QkFDakQ7TUFBQTtVQUFBO1FBQUE7UUFBQTtRQUNPO1VBQUE7VUFBQTtRQUFBO1FBRUE7VUFBQTtVQUFBO1FBQUE7UUFIUDtNQUFBLDZDQUFBO01BQUEsdURBR3dEO01BQUEsV0FFeEQ7TUFBQTtVQUFBO1FBQUE7UUFBQTtRQUNPO1VBQUE7VUFBQTtVQUFBO1FBQUE7UUFFQTtVQUFBO1VBQUE7UUFBQTtRQUhQO01BQUEscURBQUE7a0JBQUEsMkRBR3dEO2FBQUEsMEJBRXhEO01BQUE7VUFBQTtRQUFBO1FBQUE7UUFDTztVQUFBO1VBQUE7VUFBQTtRQUFBO1FBRUE7VUFBQTtVQUFBO1FBQUE7UUFIUDtNQUFBLCtDQUFBO01BQUEseURBRzBEO01BQUEsV0FFMUQ7TUFBQTtRQUFBO1FBQUE7UUFDTztVQUFBO1VBQUE7VUFBQTtRQUFBO1FBRFA7TUFBQSxpREFBQTtNQUFBOzs7SUFoQnFCO0lBQXJCLFdBQXFCLFNBQXJCO0lBQ087SUFFQTtJQUZQLFdBQU8sVUFFQSxTQUZQO0lBS087SUFFQTtJQUZQLFdBQU8sVUFFQSxTQUZQO0lBS087SUFFQTtJQUZQLFdBQU8sVUFFQSxTQUZQO0lBS087SUFFQTtJQUZQLFlBQU8sVUFFQSxTQUZQOzs7O29CQ2hCQTtNQUFBO2FBQUE7Ozs7In0=

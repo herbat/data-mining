@@ -10,44 +10,53 @@ import * as i0 from '@angular/core';
 import * as i1 from '../../../src/app/app.module';
 import * as i2 from '../../../src/app/app.component';
 import * as i3 from './app.component.ngfactory';
-import * as i4 from '@angular/common';
-import * as i5 from '@angular/platform-browser';
-import * as i6 from '@angular/forms';
+import * as i4 from '@angular/forms';
+import * as i5 from '@angular/common';
+import * as i6 from '@angular/platform-browser';
+import * as i7 from '@angular/animations/browser';
+import * as i8 from '@angular/platform-browser/animations';
+import * as i9 from '@angular/animations';
 export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.AppModule,
     [i2.AppComponent],(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
           [[8,[i3.AppComponentNgFactory]],[3,i0.ComponentFactoryResolver],i0.NgModuleRef]),
-          i0.ɵmpd(5120,i0.LOCALE_ID,i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i4.NgLocalization,
-              i4.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(4608,i0.Compiler,i0.Compiler,
-              ([] as any[])),i0.ɵmpd(5120,i0.APP_ID,i0.ɵf,([] as any[])),i0.ɵmpd(5120,
-              i0.IterableDiffers,i0.ɵk,([] as any[])),i0.ɵmpd(5120,i0.KeyValueDiffers,
-              i0.ɵl,([] as any[])),i0.ɵmpd(4608,i5.DomSanitizer,i5.ɵe,[i4.DOCUMENT]),
-          i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i5.DomSanitizer]),i0.ɵmpd(4608,
-              i5.HAMMER_GESTURE_CONFIG,i5.HammerGestureConfig,([] as any[])),i0.ɵmpd(5120,
-              i5.EVENT_MANAGER_PLUGINS,(p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
-                return [new i5.ɵDomEventsPlugin(p0_0),new i5.ɵKeyEventsPlugin(p1_0),
-                    new i5.ɵHammerGesturesPlugin(p2_0,p2_1)];
-              },[i4.DOCUMENT,i4.DOCUMENT,i4.DOCUMENT,i5.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
-              i5.EventManager,i5.EventManager,[i5.EVENT_MANAGER_PLUGINS,i0.NgZone]),
-          i0.ɵmpd(135680,i5.ɵDomSharedStylesHost,i5.ɵDomSharedStylesHost,[i4.DOCUMENT]),
-          i0.ɵmpd(4608,i5.ɵDomRendererFactory2,i5.ɵDomRendererFactory2,[i5.EventManager,
-              i5.ɵDomSharedStylesHost]),i0.ɵmpd(6144,i0.RendererFactory2,(null as any),
-              [i5.ɵDomRendererFactory2]),i0.ɵmpd(6144,i5.ɵSharedStylesHost,(null as any),
-              [i5.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i0.Testability,i0.Testability,
-              [i0.NgZone]),i0.ɵmpd(4608,i5.Meta,i5.Meta,[i4.DOCUMENT]),i0.ɵmpd(4608,
-              i5.Title,i5.Title,[i4.DOCUMENT]),i0.ɵmpd(4608,i6.ɵi,i6.ɵi,([] as any[])),
-          i0.ɵmpd(4608,i6.FormBuilder,i6.FormBuilder,([] as any[])),i0.ɵmpd(512,i4.CommonModule,
-              i4.CommonModule,([] as any[])),i0.ɵmpd(1024,i0.ErrorHandler,i5.ɵa,([] as any[])),
-          i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any) => {
-            return [i5.ɵc(p0_0,p0_1)];
-          },[[2,i5.NgProbeToken],[2,i0.NgProbeToken]]),i0.ɵmpd(512,i0.ApplicationInitStatus,
+          i0.ɵmpd(4608,i4.ɵi,i4.ɵi,([] as any[])),i0.ɵmpd(5120,i0.LOCALE_ID,i0.ɵm,
+              [[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i5.NgLocalization,i5.NgLocaleLocalization,
+              [i0.LOCALE_ID]),i0.ɵmpd(4608,i0.Compiler,i0.Compiler,([] as any[])),
+          i0.ɵmpd(5120,i0.APP_ID,i0.ɵf,([] as any[])),i0.ɵmpd(5120,i0.IterableDiffers,
+              i0.ɵk,([] as any[])),i0.ɵmpd(5120,i0.KeyValueDiffers,i0.ɵl,([] as any[])),
+          i0.ɵmpd(4608,i6.DomSanitizer,i6.ɵe,[i5.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,
+              (null as any),[i6.DomSanitizer]),i0.ɵmpd(4608,i6.HAMMER_GESTURE_CONFIG,
+              i6.HammerGestureConfig,([] as any[])),i0.ɵmpd(5120,i6.EVENT_MANAGER_PLUGINS,
+              (p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
+                return [new i6.ɵDomEventsPlugin(p0_0),new i6.ɵKeyEventsPlugin(p1_0),
+                    new i6.ɵHammerGesturesPlugin(p2_0,p2_1)];
+              },[i5.DOCUMENT,i5.DOCUMENT,i5.DOCUMENT,i6.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
+              i6.EventManager,i6.EventManager,[i6.EVENT_MANAGER_PLUGINS,i0.NgZone]),
+          i0.ɵmpd(135680,i6.ɵDomSharedStylesHost,i6.ɵDomSharedStylesHost,[i5.DOCUMENT]),
+          i0.ɵmpd(4608,i6.ɵDomRendererFactory2,i6.ɵDomRendererFactory2,[i6.EventManager,
+              i6.ɵDomSharedStylesHost]),i0.ɵmpd(5120,i7.AnimationDriver,i8.ɵc,([] as any[])),
+          i0.ɵmpd(5120,i7.ɵAnimationStyleNormalizer,i8.ɵd,([] as any[])),i0.ɵmpd(4608,
+              i7.ɵAnimationEngine,i8.ɵb,[i7.AnimationDriver,i7.ɵAnimationStyleNormalizer]),
+          i0.ɵmpd(5120,i0.RendererFactory2,i8.ɵe,[i6.ɵDomRendererFactory2,i7.ɵAnimationEngine,
+              i0.NgZone]),i0.ɵmpd(6144,i6.ɵSharedStylesHost,(null as any),[i6.ɵDomSharedStylesHost]),
+          i0.ɵmpd(4608,i0.Testability,i0.Testability,[i0.NgZone]),i0.ɵmpd(4608,i6.Meta,
+              i6.Meta,[i5.DOCUMENT]),i0.ɵmpd(4608,i6.Title,i6.Title,[i5.DOCUMENT]),
+          i0.ɵmpd(4608,i4.FormBuilder,i4.FormBuilder,([] as any[])),i0.ɵmpd(4608,i9.AnimationBuilder,
+              i8.ɵBrowserAnimationBuilder,[i0.RendererFactory2]),i0.ɵmpd(512,i4.ɵba,
+              i4.ɵba,([] as any[])),i0.ɵmpd(512,i4.FormsModule,i4.FormsModule,([] as any[])),
+          i0.ɵmpd(512,i5.CommonModule,i5.CommonModule,([] as any[])),i0.ɵmpd(1024,
+              i0.ErrorHandler,i6.ɵa,([] as any[])),i0.ɵmpd(1024,i0.APP_INITIALIZER,
+              (p0_0:any,p0_1:any) => {
+                return [i6.ɵc(p0_0,p0_1)];
+              },[[2,i6.NgProbeToken],[2,i0.NgProbeToken]]),i0.ɵmpd(512,i0.ApplicationInitStatus,
               i0.ApplicationInitStatus,[[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,
               i0.ɵe,[i0.NgZone,i0.ɵConsole,i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,
                   i0.ApplicationInitStatus]),i0.ɵmpd(2048,i0.ApplicationRef,(null as any),
               [i0.ɵe]),i0.ɵmpd(512,i0.ApplicationModule,i0.ApplicationModule,[i0.ApplicationRef]),
-          i0.ɵmpd(512,i5.BrowserModule,i5.BrowserModule,[[3,i5.BrowserModule]]),i0.ɵmpd(512,
-              i6.ɵba,i6.ɵba,([] as any[])),i0.ɵmpd(512,i6.FormsModule,i6.FormsModule,
-              ([] as any[])),i0.ɵmpd(512,i6.ReactiveFormsModule,i6.ReactiveFormsModule,
-              ([] as any[])),i0.ɵmpd(512,i1.AppModule,i1.AppModule,([] as any[]))]);
+          i0.ɵmpd(512,i6.BrowserModule,i6.BrowserModule,[[3,i6.BrowserModule]]),i0.ɵmpd(512,
+              i4.ReactiveFormsModule,i4.ReactiveFormsModule,([] as any[])),i0.ɵmpd(512,
+              i8.BrowserAnimationsModule,i8.BrowserAnimationsModule,([] as any[])),
+          i0.ɵmpd(512,i1.AppModule,i1.AppModule,([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvYXBwLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL2FwcC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvYXBwLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9

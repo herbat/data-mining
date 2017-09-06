@@ -10,7 +10,16 @@ import {
 
 @Component ({
     selector: 'words',
-    templateUrl: './words.html'
+    templateUrl: './words.html',
+    animations: [
+        trigger('enter', [
+            state('in', style({transform: 'translateX(0)'})),
+            transition(':enter', [
+                style({transform: 'translateX(100%)'}),
+                animate('400ms ease-out')
+            ]),
+        ])
+    ]
 })
 
 export class Words {
@@ -45,6 +54,7 @@ export class Words {
                 Validators.maxLength(20),
                 Validators.pattern('^[A-Za-z]+$')
             ]));
+            $('#'+i+1).focus();
         }
     };
     

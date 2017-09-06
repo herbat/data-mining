@@ -5,9 +5,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Register } from './reg/reg.component';
 import { Init } from './init/init.component';
 import { Words } from './words/words.component';
@@ -18,9 +19,10 @@ var AppModule = (function () {
     AppModule = __decorate([
         NgModule({
             imports: [
-                BrowserModule,
                 FormsModule,
-                ReactiveFormsModule
+                BrowserModule,
+                ReactiveFormsModule,
+                BrowserAnimationsModule
             ],
             declarations: [
                 AppComponent,

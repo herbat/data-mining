@@ -16,59 +16,83 @@ import * as i8 from './thx/thx.component.ngfactory';
 import * as i9 from '../../../src/app/thx/thx.component';
 var styles_AppComponent = [];
 export var RenderType_AppComponent = i0.ɵcrt({ encapsulation: 2, styles: styles_AppComponent,
-    data: {} });
+    data: { 'animation': [{ type: 7, name: 'enter', definitions: [{ type: 0, name: 'hidden', styles: { type: 6,
+                            styles: { transform: 'translateX(1000px)' }, offset: null }, options: undefined },
+                    { type: 0, name: 'shown', styles: { type: 6, styles: { transform: 'translateX(0)' }, offset: null },
+                        options: undefined }, { type: 0, name: 'hidden2', styles: { type: 6, styles: { transform: 'translateX(-1000px)' },
+                            offset: null }, options: undefined }, { type: 1, expr: 'hidden => shown',
+                        animation: { type: 4, styles: null, timings: '400ms ease-out' }, options: null },
+                    { type: 1, expr: 'shown => hidden2', animation: { type: 4, styles: null, timings: '400ms ease-in' },
+                        options: null }], options: {} }] } });
 export function View_AppComponent_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'h1', [['id', 'title']], [[8, 'hidden', 0]], null, null, null, null)), (_l()(),
-            i0.ɵted(null, [' ', ' '])), (_l()(), i0.ɵted(null, ['\n               '])),
-        (_l()(), i0.ɵeld(0, null, null, 1, 'init', [], [[8, 'hidden',
-                0]], [[null, 'onRegStart']], function (_v, en, $event) {
+    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 0, 'div', [['id', 'title-logo']], [[8, 'hidden', 0]], null, null, null, null)), (_l()(),
+            i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 1, 'init', [], [[8, 'hidden', 0], [24, '@enter', 0]], [[null, 'onRegStart'],
+            [null, '@enter.done']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('onRegStart' === en)) {
-                var pd_0 = (_co.onRegStart() !== false);
+                var pd_0 = (_co.onLeaf('init') !== false);
                 ad = (pd_0 && ad);
             }
+            if (('@enter.done' === en)) {
+                var pd_1 = (_co.onLeafEnd('init', 'reg') !== false);
+                ad = (pd_1 && ad);
+            }
             return ad;
-        }, i2.View_Init_0, i2.RenderType_Init)), i0.ɵdid(49152, null, 0, i3.Init, [], null, { onRegStart: 'onRegStart' }), (_l()(), i0.ɵted(null, ['\n               '])), (_l()(), i0.ɵeld(0, null, null, 1, 'reg', [], [[8, 'hidden', 0]], [[null, 'onWordsStart']], function (_v, en, $event) {
+        }, i2.View_Init_0, i2.RenderType_Init)), i0.ɵdid(49152, null, 0, i3.Init, [], null, { onRegStart: 'onRegStart' }), (_l()(), i0.ɵted(null, ['\n\n'])), (_l()(), i0.ɵeld(0, null, null, 1, 'reg', [], [[8, 'hidden', 0], [24, '@enter', 0]], [[null, 'onWordsStart'], [null,
+                '@enter.done']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('onWordsStart' === en)) {
-                var pd_0 = (_co.onWordsStart($event) !== false);
+                _co.onLeaf('reg');
+                var pd_0 = (_co.addUser($event) !== false);
                 ad = (pd_0 && ad);
             }
+            if (('@enter.done' === en)) {
+                var pd_1 = (_co.onLeafEnd('reg', 'words') !== false);
+                ad = (pd_1 && ad);
+            }
             return ad;
-        }, i4.View_Register_0, i4.RenderType_Register)), i0.ɵdid(49152, null, 0, i5.Register, [], null, { onWordsStart: 'onWordsStart' }),
-        (_l()(), i0.ɵted(null, ['\n               '])), (_l()(), i0.ɵeld(0, null, null, 1, 'words', [], [[8, 'hidden', 0]], [[null, 'onWordsDone']], function (_v, en, $event) {
+        }, i4.View_Register_0, i4.RenderType_Register)), i0.ɵdid(49152, null, 0, i5.Register, [], null, { onWordsStart: 'onWordsStart' }), (_l()(),
+            i0.ɵted(null, ['\n\n'])), (_l()(), i0.ɵeld(0, null, null, 1, 'words', [], [[8, 'hidden', 0], [24, '@enter', 0]], [[null, 'onWordsDone'],
+            [null, '@enter.done']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('onWordsDone' === en)) {
-                var pd_0 = (_co.onWordsDone($event) !== false);
+                _co.onLeaf('words');
+                var pd_0 = (_co.addWords($event) !== false);
                 ad = (pd_0 && ad);
             }
+            if (('@enter.done' === en)) {
+                var pd_1 = (_co.onLeafEnd('words', 'thx') !== false);
+                ad = (pd_1 && ad);
+            }
             return ad;
-        }, i6.View_Words_0, i6.RenderType_Words)), i0.ɵdid(49152, null, 0, i7.Words, [], null, { onWordsDone: 'onWordsDone' }), (_l()(), i0.ɵted(null, ['\n               '])), (_l()(), i0.ɵeld(0, null, null, 1, 'thx', [], [[8, 'hidden', 0]], [[null, 'onMailSubmit']], function (_v, en, $event) {
+        }, i6.View_Words_0, i6.RenderType_Words)), i0.ɵdid(49152, null, 0, i7.Words, [], null, { onWordsDone: 'onWordsDone' }), (_l()(), i0.ɵted(null, ['\n\n'])), (_l()(), i0.ɵeld(0, null, null, 1, 'thx', [], [[8, 'hidden', 0], [24, '@enter', 0]], [[null, 'onMailSubmit']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('onMailSubmit' === en)) {
-                var pd_0 = (_co.onMailSubmit($event) !== false);
+                _co.onLeaf('mail');
+                var pd_0 = (_co.addMail($event) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, i8.View_Thanks_0, i8.RenderType_Thanks)), i0.ɵdid(49152, null, 0, i9.Thanks, [], null, { onMailSubmit: 'onMailSubmit' }), (_l()(),
-            i0.ɵted(null, ['\n                ']))], null, function (_ck, _v) {
+        }, i8.View_Thanks_0, i8.RenderType_Thanks)), i0.ɵdid(49152, null, 0, i9.Thanks, [], null, { onMailSubmit: 'onMailSubmit' })], null, function (_ck, _v) {
         var _co = _v.component;
-        var currVal_0 = !_co.initOpen;
+        var currVal_0 = !_co.open.init;
         _ck(_v, 0, 0, currVal_0);
-        var currVal_1 = _co.title;
-        _ck(_v, 1, 0, currVal_1);
-        var currVal_2 = !_co.initOpen;
-        _ck(_v, 3, 0, currVal_2);
-        var currVal_3 = !_co.regOpen;
-        _ck(_v, 6, 0, currVal_3);
-        var currVal_4 = !_co.wordsOpen;
-        _ck(_v, 9, 0, currVal_4);
-        var currVal_5 = !_co.thxOpen;
-        _ck(_v, 12, 0, currVal_5);
+        var currVal_1 = !_co.open.init;
+        var currVal_2 = _co.states.init;
+        _ck(_v, 2, 0, currVal_1, currVal_2);
+        var currVal_3 = !_co.open.reg;
+        var currVal_4 = _co.states.reg;
+        _ck(_v, 5, 0, currVal_3, currVal_4);
+        var currVal_5 = !_co.open.words;
+        var currVal_6 = _co.states.words;
+        _ck(_v, 8, 0, currVal_5, currVal_6);
+        var currVal_7 = !_co.open.thx;
+        var currVal_8 = _co.states.thx;
+        _ck(_v, 11, 0, currVal_7, currVal_8);
     });
 }
 export function View_AppComponent_Host_0(_l) {

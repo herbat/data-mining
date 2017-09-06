@@ -1,0 +1,60 @@
+input, button {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+input {
+    width: 100%;
+    min-height: 1.5em;
+    border-bottom: 1px solid lightgray;
+    border-radius: 0px; }
+
+input:focus {
+    outline: 0;
+    background-color: whitesmoke; }
+
+button:active {
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden; }
+
+main {
+    margin-top: 20%;
+}
+
+div, span, input, button, p, h1, h2, h3, option {
+    font-size: 1em;
+    font-family: FreeSans, Helvetica, sans-serif; }
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white; }
+
+button[disabled] {
+    color: grey; }
+
+button[disabled]:hover {
+    background-color: white; }
+
+button:hover {
+    background-color: lightskyblue; }
+
+button.alt:hover {
+    background-color: gainsboro; }
+
+button:active {
+    outline: 0; }
+
+button:focus {
+    outline: 0; }

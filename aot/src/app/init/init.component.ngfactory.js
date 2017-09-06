@@ -49,7 +49,8 @@ export function View_Init_0(_l) {
                 return ad;
             }, null, null)), (_l()(), i0.ɵted(null, ['\n    '])),
         (_l()(), i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['Normal Registration'])), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, null);
+        (_l()(), i0.ɵted(null, ['Start'])), (_l()(), i0.ɵted(null, ['\n  '])),
+        (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, null);
 }
 export function View_Init_Host_0(_l) {
     return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'init', [], null, null, null, View_Init_0, RenderType_Init)), i0.ɵdid(49152, null, 0, i1.Init, [], null, null)], null, null);

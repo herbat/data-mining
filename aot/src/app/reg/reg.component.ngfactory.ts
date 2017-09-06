@@ -7,47 +7,91 @@
 
 
 import * as i0 from '@angular/core';
-import * as i1 from '../../../../src/app/reg/reg.component';
+import * as i1 from '@angular/forms';
+import * as i2 from '../../../../src/app/reg/reg.component';
 const styles_Register:any[] = ([] as any[]);
 export const RenderType_Register:i0.RendererType2 = i0.ɵcrt({encapsulation:2,styles:styles_Register,
     data:{}});
 export function View_Register_0(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',([] as any[]),
-      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      1,'span',([] as any[]),(null as any),(null as any),(null as any),(null as any),
-      (null as any))),(_l()(),i0.ɵeld(0,[['sex',1]],(null as any),0,'input',[['placeholder',
-      'Gender'],['type','text']],(null as any),(null as any),(null as any),(null as any),
-      (null as any))),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),
-      ['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',([] as any[]),
-      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      1,'span',([] as any[]),(null as any),(null as any),(null as any),(null as any),
-      (null as any))),(_l()(),i0.ɵeld(0,[['age',1]],(null as any),0,'input',[['placeholder',
-      'Age'],['type','number']],(null as any),(null as any),(null as any),(null as any),
-      (null as any))),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),
-      ['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',([] as any[]),
-      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      1,'div',[['id','submit-button']],(null as any),[[(null as any),'click']],(_v,
-          en,$event) => {
-        var ad:boolean = true;
-        var _co:i1.Register = _v.component;
-        if (('click' === en)) {
-          const pd_0:any = ((<any>_co.submit(i0.ɵnov(_v,3).value,i0.ɵnov(_v,9).value)) !== false);
-          ad = (pd_0 && ad);
-        }
-        return ad;
-      },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['Next'])),(_l()(),
-      i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),['\n']))],(null as any),
-      (null as any));
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),38,'div',[['class',
+      'pure-g']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          24,'div',[['class','row pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4 offset-sm-1-4 offset-md-1-3 offset-lg-3-8']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n    '])),(_l()(),i0.ɵeld(0,[['sex',1]],(null as any),
+          21,'select',[['placeholder','Gender'],['type','text']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n      '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),3,'option',
+          [['value','3']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),i0.ɵdid(147456,(null as any),0,i1.NgSelectOption,[i0.ElementRef,
+          i0.Renderer2,[8,(null as any)]],{value:[0,'value']},(null as any)),i0.ɵdid(147456,
+          (null as any),0,i1.ɵq,[i0.ElementRef,i0.Renderer2,[8,(null as any)]],{value:[0,
+              'value']},(null as any)),(_l()(),i0.ɵted((null as any),['gender'])),
+      (_l()(),i0.ɵted((null as any),['\n      '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),3,'option',[['value','0']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),i0.ɵdid(147456,(null as any),0,i1.NgSelectOption,
+          [i0.ElementRef,i0.Renderer2,[8,(null as any)]],{value:[0,'value']},(null as any)),
+      i0.ɵdid(147456,(null as any),0,i1.ɵq,[i0.ElementRef,i0.Renderer2,[8,(null as any)]],
+          {value:[0,'value']},(null as any)),(_l()(),i0.ɵted((null as any),['female'])),
+      (_l()(),i0.ɵted((null as any),['\n      '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),3,'option',[['value','1']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),i0.ɵdid(147456,(null as any),0,i1.NgSelectOption,
+          [i0.ElementRef,i0.Renderer2,[8,(null as any)]],{value:[0,'value']},(null as any)),
+      i0.ɵdid(147456,(null as any),0,i1.ɵq,[i0.ElementRef,i0.Renderer2,[8,(null as any)]],
+          {value:[0,'value']},(null as any)),(_l()(),i0.ɵted((null as any),['male'])),
+      (_l()(),i0.ɵted((null as any),['\n      '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),3,'option',[['value','2']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),i0.ɵdid(147456,(null as any),0,i1.NgSelectOption,
+          [i0.ElementRef,i0.Renderer2,[8,(null as any)]],{value:[0,'value']},(null as any)),
+      i0.ɵdid(147456,(null as any),0,i1.ɵq,[i0.ElementRef,i0.Renderer2,[8,(null as any)]],
+          {value:[0,'value']},(null as any)),(_l()(),i0.ɵted((null as any),['x'])),
+      (_l()(),i0.ɵted((null as any),['\n    '])),(_l()(),i0.ɵted((null as any),['\n  '])),
+      (_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          3,'div',[['class','row pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4 offset-sm-1-4 offset-md-1-3 offset-lg-3-8']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n    '])),(_l()(),i0.ɵeld(0,[['age',1]],(null as any),
+          0,'input',[['placeholder','Age'],['type','number']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n  '])),(_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),4,'div',[['class','row pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4 offset-sm-1-4 offset-md-1-3 offset-lg-3-8']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n    '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          1,'button',([] as any[]),(null as any),[[(null as any),'click']],(_v,en,
+              $event) => {
+            var ad:boolean = true;
+            var _co:i2.Register = _v.component;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>_co.submit(i0.ɵnov(_v,4).value,i0.ɵnov(_v,30).value)) !== false);
+              ad = (pd_0 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['Next'])),
+      (_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵted((null as any),['\n'])),
+      (_l()(),i0.ɵted((null as any),['\n\n']))],(_ck,_v) => {
+    const currVal_0:any = '3';
+    _ck(_v,7,0,currVal_0);
+    const currVal_1:any = '3';
+    _ck(_v,8,0,currVal_1);
+    const currVal_2:any = '0';
+    _ck(_v,12,0,currVal_2);
+    const currVal_3:any = '0';
+    _ck(_v,13,0,currVal_3);
+    const currVal_4:any = '1';
+    _ck(_v,17,0,currVal_4);
+    const currVal_5:any = '1';
+    _ck(_v,18,0,currVal_5);
+    const currVal_6:any = '2';
+    _ck(_v,22,0,currVal_6);
+    const currVal_7:any = '2';
+    _ck(_v,23,0,currVal_7);
+  },(null as any));
 }
 export function View_Register_Host_0(_l:any):i0.ɵViewDefinition {
   return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'reg',([] as any[]),
       (null as any),(null as any),(null as any),View_Register_0,RenderType_Register)),
-      i0.ɵdid(49152,(null as any),0,i1.Register,([] as any[]),(null as any),(null as any))],
+      i0.ɵdid(49152,(null as any),0,i2.Register,([] as any[]),(null as any),(null as any))],
       (null as any),(null as any));
 }
-export const RegisterNgFactory:i0.ComponentFactory<i1.Register> = i0.ɵccf('reg',i1.Register,
+export const RegisterNgFactory:i0.ComponentFactory<i2.Register> = i0.ɵccf('reg',i2.Register,
     View_Register_Host_0,{},{onWordsStart:'onWordsStart'},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL3JlZy9yZWcuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL3JlZy9yZWcuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvcmVnL3JlZy5odG1sIiwibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvcmVnL3JlZy5jb21wb25lbnQudHMuUmVnaXN0ZXJfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2PlxuICA8c3Bhbj48aW5wdXQgdHlwZT1cInRleHRcIiAgICNzZXggcGxhY2Vob2xkZXI9XCJHZW5kZXJcIj48L3NwYW4+XG48L2Rpdj5cbjxkaXY+XG4gIDxzcGFuPjxpbnB1dCB0eXBlPVwibnVtYmVyXCIgI2FnZSBwbGFjZWhvbGRlcj1cIkFnZVwiPjwvc3Bhbj5cbjwvZGl2PlxuPGRpdj5cbiAgPGRpdiBpZD1cInN1Ym1pdC1idXR0b25cIiAoY2xpY2spPVwic3VibWl0KHNleC52YWx1ZSwgYWdlLnZhbHVlKVwiPk5leHQ8L2Rpdj5cbjwvZGl2PlxuIiwiPHJlZz48L3JlZz4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7OztvQkNBQTtNQUFBLHdFQUFLO2FBQUEsMEJBQ0g7TUFBQTtNQUFBLGdCQUFNO01BQUE7TUFBQSxnQkFBc0QsdUNBQ3hEO01BQUEsU0FDTjtNQUFBLHdFQUFLO2FBQUEsMEJBQ0g7TUFBQTtNQUFBLGdCQUFNO01BQUE7TUFBQSxnQkFBbUQsdUNBQ3JEO01BQUEsU0FDTjtNQUFBLHdFQUFLO2FBQUEsMEJBQ0g7TUFBQTttQkFBQTtRQUFBO1FBQUE7UUFBd0I7VUFBQTtVQUFBO1FBQUE7UUFBeEI7TUFBQSxnQ0FBK0QseUNBQVU7YUFBQSx3QkFDckU7Ozs7b0JDUk47TUFBQTthQUFBOzs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL3JlZy9yZWcuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2F0dXMvRGVza3RvcC9EYXRhIE1pbmluZy9zcmMvYXBwL3JlZy9yZWcuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvcmVnL3JlZy5odG1sIiwibmc6Ly8vVXNlcnMvYXR1cy9EZXNrdG9wL0RhdGEgTWluaW5nL3NyYy9hcHAvcmVnL3JlZy5jb21wb25lbnQudHMuUmVnaXN0ZXJfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwicHVyZS1nXCI+XG4gIDxkaXYgY2xhc3M9XCJyb3cgcHVyZS11LTEtMiBwdXJlLXUtbWQtMS0zIHB1cmUtdS1sZy0xLTQgb2Zmc2V0LXNtLTEtNCBvZmZzZXQtbWQtMS0zIG9mZnNldC1sZy0zLThcIj5cbiAgICA8c2VsZWN0IHR5cGU9XCJ0ZXh0XCIgICAjc2V4IHBsYWNlaG9sZGVyPVwiR2VuZGVyXCI+XG4gICAgICA8b3B0aW9uIHZhbHVlPVwiM1wiPmdlbmRlcjwvb3B0aW9uPlxuICAgICAgPG9wdGlvbiB2YWx1ZT1cIjBcIj5mZW1hbGU8L29wdGlvbj5cbiAgICAgIDxvcHRpb24gdmFsdWU9XCIxXCI+bWFsZTwvb3B0aW9uPlxuICAgICAgPG9wdGlvbiB2YWx1ZT1cIjJcIj54PC9vcHRpb24+XG4gICAgPC9zZWxlY3Q+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwicm93IHB1cmUtdS0xLTIgcHVyZS11LW1kLTEtMyBwdXJlLXUtbGctMS00IG9mZnNldC1zbS0xLTQgb2Zmc2V0LW1kLTEtMyBvZmZzZXQtbGctMy04XCI+XG4gICAgPGlucHV0IHR5cGU9XCJudW1iZXJcIiAjYWdlIHBsYWNlaG9sZGVyPVwiQWdlXCI+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwicm93IHB1cmUtdS0xLTIgcHVyZS11LW1kLTEtMyBwdXJlLXUtbGctMS00IG9mZnNldC1zbS0xLTQgb2Zmc2V0LW1kLTEtMyBvZmZzZXQtbGctMy04XCI+XG4gICAgPGJ1dHRvbiAoY2xpY2spPVwic3VibWl0KHNleC52YWx1ZSwgYWdlLnZhbHVlKVwiPk5leHQ8L2J1dHRvbj5cbiAgPC9kaXY+XG48L2Rpdj5cblxuIiwiPHJlZz48L3JlZz4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtNQUFvQix5Q0FDbEI7VUFBQTtVQUFBO01BQWtHLDJDQUNoRztVQUFBO1VBQUEsNENBQWdEO1VBQUEsZUFDOUM7VUFBQTtVQUFBLHVCQUFBO3VCQUFBLDZEQUFBO1VBQUE7Y0FBQSx5QkFBa0I7TUFBZSw2Q0FDakM7VUFBQTtVQUFBLHFDQUFBO1VBQUE7YUFBQTtVQUFBLG1DQUFrQjtNQUFlLDZDQUNqQztVQUFBO1VBQUEscUNBQUE7VUFBQTthQUFBO1VBQUEsbUNBQWtCO01BQWEsNkNBQy9CO1VBQUE7VUFBQSxxQ0FBQTtVQUFBO2FBQUE7VUFBQSxtQ0FBa0I7TUFBVSwyQ0FDckI7TUFDTCx5Q0FDTjtVQUFBO1VBQUE7TUFBa0csMkNBQ2hHO1VBQUE7VUFBQSw0Q0FBNEM7VUFBQSxXQUN4Qyx5Q0FDTjtVQUFBO1VBQUE7TUFBa0csMkNBQ2hHO1VBQUE7b0JBQUE7WUFBQTtZQUFBO1lBQVE7Y0FBQTtjQUFBO1lBQUE7WUFBUjtVQUFBLGdDQUErQztNQUFhLHlDQUN4RDtNQUNGO0lBWlE7SUFBUixXQUFRLFNBQVI7SUFBUTtJQUFSLFdBQVEsU0FBUjtJQUNRO0lBQVIsWUFBUSxTQUFSO0lBQVE7SUFBUixZQUFRLFNBQVI7SUFDUTtJQUFSLFlBQVEsU0FBUjtJQUFRO0lBQVIsWUFBUSxTQUFSO0lBQ1E7SUFBUixZQUFRLFNBQVI7SUFBUTtJQUFSLFlBQVEsU0FBUjs7OztvQkNOTjtNQUFBO2FBQUE7Ozs7In0=
