@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Five Words</title>
+    <meta charset="utf-8">
+    <meta http="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <app-root>
+      </app-root>
+      <script src = "shim.min.js"></script>
+      <script src = "zone.js"></script>
+      <script src = "build.js"></script>
+    </main>
+    <footer>
+      <script>
+        var giftofspeed = document.createElement('link');
+        giftofspeed.rel = 'stylesheet';
+        giftofspeed.href = 'pure-offset.css';
+        giftofspeed.type = 'text/css';
+        var godefer = document.getElementsByTagName('link')[0];
+        godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+        function nextBtnSize{
+          if($('.word-ip-box').length){
+            var w = $('.word-ip-box').width();
+            $('.next-btn').css({'height':w,'width':w});
+          }
+          setTimeout(nextBtnSize, 50);
+        }
+      </script>
+    </footer>
+  </body>
+</html>

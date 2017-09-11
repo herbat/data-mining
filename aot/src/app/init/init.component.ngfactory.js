@@ -10,34 +10,10 @@ var styles_Init = [];
 export var RenderType_Init = i0.ɵcrt({ encapsulation: 2, styles: styles_Init,
     data: {} });
 export function View_Init_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 9, 'div', [['class',
-                'pure-g']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 6, 'div', [['class', 'buttn pure-u-3-5 pure-u-md-1-3 pure-u-lg-1-5 pure-u-xl-1-5 offset-sm-1-5 offset-md-1-3 offset-lg-2-5 offset-xl-2-5'],
-            ['id', 'google-a-btn']], null, [[null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (_co.startReg() !== false);
-                ad = (pd_0 && ad);
-            }
-            return ad;
-        }, null, null)), (_l()(), i0.ɵted(null, ['\n    '])),
-        (_l()(), i0.ɵeld(0, null, null, 0, 'span', [['id', 'g-icon']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [['class',
-                'logintext'], ['id', 'gtext']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['Sign in with Google'])),
-        (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵted(null, ['\n'])),
-        (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 7, 'div', [['class', 'pure-g']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵeld(0, null, null, 4, 'div', [['class', 'buttn pure-u-3-5 pure-u-md-1-3 pure-u-lg-1-5 pure-u-xl-1-5 offset-sm-1-5 offset-md-1-3 offset-lg-2-5 offset-xl-2-5'],
-            ['id', 'in-a-btn']], null, [[null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (_co.startReg() !== false);
-                ad = (pd_0 && ad);
-            }
-            return ad;
-        }, null, null)), (_l()(), i0.ɵted(null, ['\n    '])),
-        (_l()(), i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['Sign in with LinkedIn'])), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 2, 'div', [['id', 'or']], null, null, null, null, null)),
-        (_l()(), i0.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['or'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 7, 'div', [['class', 'pure-g']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(),
+    return i0.ɵvid(0, [(_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 7, 'div', [['class', 'pure-g']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(),
+            i0.ɵeld(0, null, null, 4, 'div', [['class', 'pure-u-3-5 pure-u-md-1-3 pure-u-lg-1-5 pure-u-xl-1-5 offset-sm-1-5 offset-md-1-3 offset-lg-2-5 offset-xl-2-5'],
+                ['id', 'qinit']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['',
+            ''])), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵeld(0, null, null, 7, 'div', [['class', 'pure-g']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(),
             i0.ɵeld(0, null, null, 4, 'div', [['class', 'buttn pure-u-3-5 pure-u-md-1-3 pure-u-lg-1-5 pure-u-xl-1-5 offset-sm-1-5 offset-md-1-3 offset-lg-2-5 offset-xl-2-5'],
                 ['id', 'nreg-btn']], null, [[null, 'click']], function (_v, en, $event) {
                 var ad = true;
@@ -47,10 +23,12 @@ export function View_Init_0(_l) {
                     ad = (pd_0 && ad);
                 }
                 return ad;
-            }, null, null)), (_l()(), i0.ɵted(null, ['\n    '])),
-        (_l()(), i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext']], null, null, null, null, null)),
-        (_l()(), i0.ɵted(null, ['Start'])), (_l()(), i0.ɵted(null, ['\n  '])),
-        (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, null);
+            }, null, null)), (_l()(), i0.ɵted(null, ['\n    '])), (_l()(),
+            i0.ɵeld(0, null, null, 1, 'span', [['class', 'logintext']], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['Start'])), (_l()(), i0.ɵted(null, ['\n  '])), (_l()(), i0.ɵted(null, ['\n'])), (_l()(), i0.ɵted(null, ['\n']))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.question;
+        _ck(_v, 6, 0, currVal_0);
+    });
 }
 export function View_Init_Host_0(_l) {
     return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'init', [], null, null, null, View_Init_0, RenderType_Init)), i0.ɵdid(49152, null, 0, i1.Init, [], null, null)], null, null);

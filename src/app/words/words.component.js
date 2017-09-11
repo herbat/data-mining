@@ -12,7 +12,7 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 var Words = (function () {
     function Words() {
-        this.question = 'Write five words that pop into your head about this talk!';
+        this.question = 'TEDxDanubia';
         this.onWordsDone = new EventEmitter();
         this.wordForm = new FormGroup({
             words: new FormArray([
@@ -20,7 +20,7 @@ var Words = (function () {
                     Validators.required,
                     Validators.minLength(3),
                     Validators.maxLength(20),
-                    Validators.pattern('^[A-Za-z]+$')
+                    Validators.pattern('^[A-Za-z-]+$')
                 ]),
             ])
         });
@@ -55,10 +55,10 @@ var Words = (function () {
         if (input.hasClass('ng-invalid') && input.hasClass('ng-touched')) {
             w = input.height() + input.width();
             $('#inv' + i).css({ 'width': w + 'px' });
-            $('#inv' + i).show('slow');
+            $('#inv' + i).show();
         }
         else {
-            $('#inv' + i).hide('slow');
+            $('#inv' + i).hide();
         }
     };
     __decorate([

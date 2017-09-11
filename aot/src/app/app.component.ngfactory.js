@@ -77,7 +77,7 @@ export function View_AppComponent_0(_l) {
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, i8.View_Thanks_0, i8.RenderType_Thanks)), i0.ɵdid(49152, null, 0, i9.Thanks, [], null, { onMailSubmit: 'onMailSubmit' })], null, function (_ck, _v) {
+        }, i8.View_Thanks_0, i8.RenderType_Thanks)), i0.ɵdid(49152, null, 0, i9.Thanks, [], null, { onMailSubmit: 'onMailSubmit' }), (_l()(), i0.ɵted(null, ['\n']))], null, function (_ck, _v) {
         var _co = _v.component;
         var currVal_0 = !_co.open.init;
         _ck(_v, 0, 0, currVal_0);

@@ -1,10 +1,10 @@
 <div class="pure-g">
   <div id="thx" class="pure-u-3-5 pure-u-md-1-3 pure-u-lg-1-5 pure-u-xl-1-5 offset-sm-1-5 offset-md-1-3 offset-lg-2-5 offset-xl-2-5">
     <div class="thx-row">
-      <h2>Thank you for submitting your answer!</h2>
+      <h2>Thank you for submitting your words!</h2>
     </div>
     <div class="thx-row" >
-      <h3 *ngIf="!mailAdded && !noThx; else mTxt">If you would like to see our stats and results, we can update you on an email adress.</h3>
+      <h3 *ngIf="!mailAdded && !noThx; else mTxt">If you would like us to send you <b>your personal statistics</b> and results in relation to the whole group, please provide an email address.</h3>
       <ng-template #mTxt ><p *ngIf="mailAdded">We'll keep you up to date!</p></ng-template>
     </div>
     <div class="thx-row" [hidden] = "mailAdded || noThx">

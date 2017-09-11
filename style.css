@@ -1,15 +1,4 @@
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("proxima-nova/Mark Simonson - Proxima Nova Semibold-webfont.eot");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Proxima Nova Thin';
-  src: url("proxima-nova/Mark Simonson - Proxima Nova Thin-webfont.eot");
-  font-weight: normal;
-  font-style: normal; }
-
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,600,700");
 @keyframes fade1 {
   from {
     background-color: white; }
@@ -22,7 +11,12 @@
   to {
     background-color: #EEE; } }
 
-/* line 25, /Users/atus/Desktop/Data Mining/style.scss */
+@media screen and (max-width: 600px) {
+  /* line 14, /Users/atus/Desktop/Data Mining/style.scss */
+  init .pure-g:first-child {
+    margin-bottom: 100px; } }
+
+/* line 19, /Users/atus/Desktop/Data Mining/style.scss */
 input, button, select {
   border: none;
   background-image: none;
@@ -31,19 +25,28 @@ input, button, select {
   -moz-box-shadow: none;
   box-shadow: none; }
 
-/* line 34, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 28, /Users/atus/Desktop/Data Mining/style.scss */
+#loading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 23%;
+  width: 200px;
+  height: 200px; }
+
+/* line 37, /Users/atus/Desktop/Data Mining/style.scss */
 input, select {
   width: 100%;
   min-height: 1.5em;
   border-bottom: 1px solid lightgray;
   border-radius: 0px; }
 
-/* line 43, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 44, /Users/atus/Desktop/Data Mining/style.scss */
 input:focus, select:focus {
   outline: 0;
   background-color: whitesmoke; }
 
-/* line 48, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 49, /Users/atus/Desktop/Data Mining/style.scss */
 button:active {
   background: none;
   border: none;
@@ -51,22 +54,35 @@ button:active {
   -moz-box-shadow: none;
   box-shadow: none; }
 
-/* line 56, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 57, /Users/atus/Desktop/Data Mining/style.scss */
+#qinit {
+  max-width: 300px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 5em; }
+
+/* line 66, /Users/atus/Desktop/Data Mining/style.scss */
+h1 {
+  font-size: 1.6em;
+  text-align: center; }
+
+/* line 71, /Users/atus/Desktop/Data Mining/style.scss */
 html, body {
   margin: 0;
   height: 100%;
   overflow: hidden; }
 
-/* line 62, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 77, /Users/atus/Desktop/Data Mining/style.scss */
 init, reg, words, thx, div, span, input, button, p, h1, h2, h3, option {
-  font-family: 'Proxima Nova', FreeSans, Helvetica, sans-serif; }
+  font-family: Lato, Helvetica, sans-serif; }
 
-/* line 66, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 81, /Users/atus/Desktop/Data Mining/style.scss */
 main, app-root {
   width: 100%;
   height: 100%; }
 
-/* line 71, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 86, /Users/atus/Desktop/Data Mining/style.scss */
 #title-logo {
   background: url(5words-logo.png);
   background-size: cover;
@@ -77,13 +93,13 @@ main, app-root {
   margin-top: 5%;
   margin-bottom: 4%; }
 
-/* line 82, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 97, /Users/atus/Desktop/Data Mining/style.scss */
 init .pure-g {
   height: 15%;
   max-height: 60px;
-  margin-bottom: 10px; }
+  margin-bottom: 50px; }
 
-/* line 88, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 103, /Users/atus/Desktop/Data Mining/style.scss */
 div.buttn {
   background-color: white;
   color: grey;
@@ -96,17 +112,17 @@ div.buttn {
   align-items: center;
   justify-content: space-around; }
 
-/* line 101, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 116, /Users/atus/Desktop/Data Mining/style.scss */
 div.buttn:hover {
   background-color: lightgray;
   animation: fade1 .2s; }
 
-/* line 106, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 121, /Users/atus/Desktop/Data Mining/style.scss */
 div.buttn span.logintext {
   display: inline-block;
   text-align: center; }
 
-/* line 111, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 126, /Users/atus/Desktop/Data Mining/style.scss */
 #g-icon {
   height: 35px;
   width: 35px;
@@ -115,33 +131,27 @@ div.buttn span.logintext {
   background: url(g-normal.png);
   background-size: cover; }
 
-/* line 120, /Users/atus/Desktop/Data Mining/style.scss */
-#or {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 50%;
-  height: 30px;
-  max-width: 200px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: grey; }
+/* line 135, /Users/atus/Desktop/Data Mining/style.scss */
+#info {
+  font-weight: 300;
+  color: grey;
+  margin-top: 50px; }
 
-/* line 132, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 141, /Users/atus/Desktop/Data Mining/style.scss */
 footer {
   position: fixed;
   width: 96%;
   height: 5%;
   bottom: 10px; }
 
-/* line 139, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 148, /Users/atus/Desktop/Data Mining/style.scss */
 footer p {
   margin: 0;
   font-size: .85em;
   text-align: center;
   color: lightgrey; }
 
-/* line 146, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 155, /Users/atus/Desktop/Data Mining/style.scss */
 words, thx, reg {
   display: block;
   margin-top: 10%;
@@ -149,88 +159,88 @@ words, thx, reg {
   font-size: .9em;
   text-align: center; }
 
-/* line 154, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 163, /Users/atus/Desktop/Data Mining/style.scss */
 form {
   width: 100%;
   height: 100%; }
 
-/* line 159, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 168, /Users/atus/Desktop/Data Mining/style.scss */
 div.word-g {
   margin-bottom: 30px; }
 
-/* line 163, /Users/atus/Desktop/Data Mining/style.scss */
-.word {
-  padding: none; }
-
-/* line 167, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 172, /Users/atus/Desktop/Data Mining/style.scss */
 .wordin {
   display: flex;
   align-content: flex-start;
   justify-content: center; }
 
-/* line 173, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 178, /Users/atus/Desktop/Data Mining/style.scss */
 .word-ip-box {
   max-width: calc(94% - 1.5em); }
 
-/* line 177, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 182, /Users/atus/Desktop/Data Mining/style.scss */
 #question {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 183, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 188, /Users/atus/Desktop/Data Mining/style.scss */
 .next-btn {
   height: 100%;
   background: url(rarrowicon.png);
   background-size: cover;
   margin-left: 2px; }
 
-/* line 190, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 195, /Users/atus/Desktop/Data Mining/style.scss */
 .invalid {
   font-size: .8em;
   color: tomato;
   background-color: mistyrose; }
 
-/* line 196, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 201, /Users/atus/Desktop/Data Mining/style.scss */
 .thx-row {
   display: block;
   margin-bottom: 50px; }
 
-/* line 201, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 206, /Users/atus/Desktop/Data Mining/style.scss */
 .row {
   margin-bottom: 28px; }
 
-/* line 206, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 210, /Users/atus/Desktop/Data Mining/style.scss */
+h3 {
+  font-weight: 400; }
+
+/* line 214, /Users/atus/Desktop/Data Mining/style.scss */
 h1.init-done {
   transform: translateY(-600%); }
 
-/* line 210, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 218, /Users/atus/Desktop/Data Mining/style.scss */
 button {
   margin-left: auto;
   margin-right: auto;
   background-color: white; }
 
-/* line 216, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 224, /Users/atus/Desktop/Data Mining/style.scss */
 button[disabled] {
   color: grey; }
 
-/* line 220, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 228, /Users/atus/Desktop/Data Mining/style.scss */
 button[disabled]:hover {
   background-color: white; }
 
-/* line 224, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 232, /Users/atus/Desktop/Data Mining/style.scss */
 button:hover {
   background-color: lightskyblue; }
 
-/* line 228, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 236, /Users/atus/Desktop/Data Mining/style.scss */
 button.alt:hover {
   background-color: gainsboro; }
 
-/* line 232, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 240, /Users/atus/Desktop/Data Mining/style.scss */
 button:active {
   outline: 0; }
 
-/* line 236, /Users/atus/Desktop/Data Mining/style.scss */
+/* line 244, /Users/atus/Desktop/Data Mining/style.scss */
 button:focus {
   outline: 0; }
 

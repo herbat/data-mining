@@ -1,0 +1,29 @@
+const express = require('express');
+const cors    = require('cors');
+const parser  = require('body-parser');
+const app = express();
+const port = 3000;
+//const mc = require('mongodb').MongoClient;
+//const assert = require('assert');
+//const ObjectId = require('mongodb').ObjectID;
+//const urlM = 'mongodb://localhost:27017/';
+
+app.use(cors());
+app.use(parser.json());
+
+app.get('/', (request, response) => {  
+    response.send('Hello from Express!')
+})
+
+app.post('/data', (request, response) => {
+    console.log(request.body.id);
+    response.send('JSON accepted!');
+})
+
+app.listen(port, (err) => {  
+    if (err) {
+        return console.log('something bad happened:', err)
+    }
+
+    console.log(`server is listening on ${port}`)
+})

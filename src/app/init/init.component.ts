@@ -14,6 +14,7 @@ import {
 
 export class Init {
     @Output() private onRegStart = new EventEmitter();
+    question = "5 words about TEDxDanubia";
 
     startReg(){
         $('#title').addClass('init-done');

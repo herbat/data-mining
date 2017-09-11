@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Five Words</title>
+    <meta charset="utf-8">
+    <meta http="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="pure-offset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <img id="loading" src="icon.png">
+      <script>
+        var img = new Image();
+        img.src = 'loading.gif';
+        img.onload = function () {
+          $('#loading').attr('src', img.src);
+        }
+      </script>
+      <app-root>
+      </app-root>
+      <script>
+        $('app-root').hide();
+        setTimeout(function hideLoad() {
+          if($('footer').length){
+            $("#loading").hide();
+            $("app-root").show();
+          } else {
+            setTimeout(hideLoad, 1440);
+          }
+        }, 1400)
+      </script>
+      <script src="shim.min.js"></script>
+      <script src="zone.js"></script>
+      <script src="build.js"></script>
+    </main>
+    <footer>
+      <script>
+        function nextBtnSize(){
+          if($('.word-ip-box').length){
+            var h = $('.word-ip-box').height();
+            $('.next-btn').css({'height':h,'width':h});
+          }
+          setTimeout(nextBtnSize, 50);
+        }
+        nextBtnSize();
+      </script>
+    </footer>
+  </body>
+</html>

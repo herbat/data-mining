@@ -11,6 +11,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 var Init = (function () {
     function Init() {
         this.onRegStart = new EventEmitter();
+        this.question = "5 words about TEDxDanubia";
     }
     Init.prototype.startReg = function () {
         $('#title').addClass('init-done');

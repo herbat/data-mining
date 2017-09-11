@@ -23,7 +23,7 @@ import {
 })
 
 export class Words {
-    question = 'Write five words that pop into your head about this talk!';
+    question = 'TEDxDanubia';
     @Output() onWordsDone: EventEmitter<any> = new EventEmitter();
 
     wordForm = new FormGroup({
@@ -32,7 +32,7 @@ export class Words {
                 Validators.required,
                 Validators.minLength(3),
                 Validators.maxLength(20),
-                Validators.pattern('^[A-Za-z]+$')
+                Validators.pattern('^[A-Za-z-]+$')
             ]),
         ])
     });
@@ -65,8 +65,8 @@ export class Words {
         if (input.hasClass('ng-invalid') && input.hasClass('ng-touched')) {
             w = input.height() + input.width();
             $('#inv'+i).css({'width': w + 'px'});
-            $('#inv'+i).show('slow');
-        } else { $('#inv'+i).hide('slow');}
+            $('#inv'+i).show();
+        } else { $('#inv'+i).hide();}
 
     }
 
